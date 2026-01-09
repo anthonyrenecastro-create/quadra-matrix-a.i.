@@ -1,0 +1,275 @@
+2026-01-09 05:18:57 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at DEBUG level
+2026-01-09 05:18:57 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-09 05:18:57 - __main__ - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-09 05:18:57 - utils.security - [32mINFO[0m - init_auth:298 - Auth initialized (enabled: False)
+2026-01-09 05:18:57 - __main__ - [32mINFO[0m - <module>:1135 - Authentication initialized
+2026-01-09 05:18:57 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-09 05:18:57 - __main__ - [32mINFO[0m - <module>:1142 - Model mode set to inference
+2026-01-09 05:18:57 - __main__ - [32mINFO[0m - <module>:1144 - Starting QuadraMatrix Benchmark Dashboard...
+2026-01-09 05:18:57 - __main__ - [32mINFO[0m - <module>:1145 - Environment: development
+2026-01-09 05:18:57 - __main__ - [32mINFO[0m - <module>:1146 - Open your browser to: http://0.0.0.0:5000
+2026-01-09 05:18:57 - werkzeug - [32mINFO[0m - _log:96 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.0:5000
+2026-01-09 05:18:57 - werkzeug - [32mINFO[0m - _log:96 - [33mPress CTRL+C to quit[0m
+2026-01-09 05:18:57 - werkzeug - [32mINFO[0m - _log:96 -  * Restarting with stat
+2026-01-09 05:19:01 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at DEBUG level
+2026-01-09 05:19:01 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-09 05:19:01 - __main__ - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-09 05:19:01 - utils.security - [32mINFO[0m - init_auth:298 - Auth initialized (enabled: False)
+2026-01-09 05:19:01 - __main__ - [32mINFO[0m - <module>:1135 - Authentication initialized
+2026-01-09 05:19:01 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-09 05:19:01 - __main__ - [32mINFO[0m - <module>:1142 - Model mode set to inference
+2026-01-09 05:19:01 - __main__ - [32mINFO[0m - <module>:1144 - Starting QuadraMatrix Benchmark Dashboard...
+2026-01-09 05:19:01 - __main__ - [32mINFO[0m - <module>:1145 - Environment: development
+2026-01-09 05:19:01 - __main__ - [32mINFO[0m - <module>:1146 - Open your browser to: http://0.0.0.0:5000
+2026-01-09 05:19:01 - werkzeug - [33mWARNING[0m - _log:96 -  * Debugger is active!
+2026-01-09 05:19:01 - werkzeug - [32mINFO[0m - _log:96 -  * Debugger PIN: 432-737-809
+2026-01-09 05:19:06 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [09/Jan/2026 05:19:06] "GET / HTTP/1.1" 200 -
+2026-01-09 05:19:07 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [09/Jan/2026 05:19:07] "GET /socket.io/?EIO=4&transport=polling&t=PkXCQy_ HTTP/1.1" 200 -
+2026-01-09 05:19:07 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [09/Jan/2026 05:19:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-09 05:19:07 - socketio.server - [32mINFO[0m - emit:159 - emitting event "status_message" to ATSOMXtEjUm9tA3TAAAB [/]
+2026-01-09 05:19:07 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [09/Jan/2026 05:19:07] "POST /socket.io/?EIO=4&transport=polling&t=PkXCR1e&sid=BtpyeO_4Z9OG9d8pAAAA HTTP/1.1" 200 -
+2026-01-09 05:19:07 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [09/Jan/2026 05:19:07] "GET /socket.io/?EIO=4&transport=polling&t=PkXCR1k&sid=BtpyeO_4Z9OG9d8pAAAA HTTP/1.1" 200 -
+2026-01-09 05:19:07 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [09/Jan/2026 05:19:07] "GET /socket.io/?EIO=4&transport=polling&t=PkXCR6B&sid=BtpyeO_4Z9OG9d8pAAAA HTTP/1.1" 200 -
+2026-01-09 05:19:07 - socketio.server - [32mINFO[0m - _handle_event:569 - received event "get_ablation_status" from ATSOMXtEjUm9tA3TAAAB [/]
+2026-01-09 05:19:07 - socketio.server - [32mINFO[0m - emit:159 - emitting event "ablation_status" to all [/]
+2026-01-09 05:19:07 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [09/Jan/2026 05:19:07] "POST /socket.io/?EIO=4&transport=polling&t=PkXCR6O&sid=BtpyeO_4Z9OG9d8pAAAA HTTP/1.1" 200 -
+2026-01-09 05:19:20 - socketio.server - [32mINFO[0m - _handle_event:569 - received event "initialize_system" from ATSOMXtEjUm9tA3TAAAB [/]
+2026-01-09 05:19:20 - socketio.server - [32mINFO[0m - emit:159 - emitting event "status_message" to all [/]
+2026-01-09 05:19:21 - quadra_matrix_spi - [32mINFO[0m - __init__:101 - Symbolic Predictive Interpreter initialized with knowledge graph.
+2026-01-09 05:19:21 - socketio.server - [32mINFO[0m - emit:159 - emitting event "status_message" to all [/]
+2026-01-09 05:19:21 - socketio.server - [32mINFO[0m - emit:159 - emitting event "system_initialized" to all [/]
+2026-01-09 05:19:29 - socketio.server - [32mINFO[0m - _handle_event:569 - received event "start_training" from ATSOMXtEjUm9tA3TAAAB [/]
+2026-01-09 05:19:29 - socketio.server - [32mINFO[0m - emit:159 - emitting event "status_message" to all [/]
+2026-01-09 05:19:29 - socketio.server - [32mINFO[0m - emit:159 - emitting event "training_status" to all [/]
+2026-01-09 05:19:29 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:29 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.5094, Avg Reward: 7.2878
+2026-01-09 05:19:29 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.5089, Avg Reward: 7.2892
+2026-01-09 05:19:29 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.5090, Avg Reward: 7.2894
+2026-01-09 05:19:29 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:29 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:30 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.5040, Avg Reward: 7.3145
+2026-01-09 05:19:30 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.5033, Avg Reward: 7.3163
+2026-01-09 05:19:30 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.5036, Avg Reward: 7.3164
+2026-01-09 05:19:30 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:30 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:30 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.5031, Avg Reward: 7.3183
+2026-01-09 05:19:30 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.5008, Avg Reward: 7.3240
+2026-01-09 05:19:31 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.5012, Avg Reward: 7.3252
+2026-01-09 05:19:31 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:31 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:31 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.5037, Avg Reward: 7.3156
+2026-01-09 05:19:31 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.5039, Avg Reward: 7.3152
+2026-01-09 05:19:31 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.5025, Avg Reward: 7.3173
+2026-01-09 05:19:31 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:32 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:32 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.5019, Avg Reward: 7.3242
+2026-01-09 05:19:32 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.5013, Avg Reward: 7.3256
+2026-01-09 05:19:32 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.5009, Avg Reward: 7.3269
+2026-01-09 05:19:32 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:33 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:33 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4990, Avg Reward: 7.3383
+2026-01-09 05:19:33 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4984, Avg Reward: 7.3399
+2026-01-09 05:19:33 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4986, Avg Reward: 7.3402
+2026-01-09 05:19:33 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:34 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:34 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.5002, Avg Reward: 7.3328
+2026-01-09 05:19:34 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.5000, Avg Reward: 7.3334
+2026-01-09 05:19:34 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4972, Avg Reward: 7.3380
+2026-01-09 05:19:34 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:34 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:34 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4988, Avg Reward: 7.3393
+2026-01-09 05:19:35 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4983, Avg Reward: 7.3407
+2026-01-09 05:19:35 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4971, Avg Reward: 7.3431
+2026-01-09 05:19:35 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:35 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:35 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4934, Avg Reward: 7.3660
+2026-01-09 05:19:35 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4924, Avg Reward: 7.3685
+2026-01-09 05:19:35 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4913, Avg Reward: 7.3712
+2026-01-09 05:19:35 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:36 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:36 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4928, Avg Reward: 7.3694
+2026-01-09 05:19:36 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4936, Avg Reward: 7.3674
+2026-01-09 05:19:36 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4902, Avg Reward: 7.3725
+2026-01-09 05:19:36 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:36 - quadra_matrix_spi - [32mINFO[0m - save_weights:384 - Saved neural network weights to /workspaces/quadra-matrix-a.i./dashboard_state/oscillator_weights.pth
+2026-01-09 05:19:37 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:37 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4816, Avg Reward: 7.4250
+2026-01-09 05:19:37 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4802, Avg Reward: 7.4286
+2026-01-09 05:19:37 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4775, Avg Reward: 7.4342
+2026-01-09 05:19:37 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:38 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:38 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4816, Avg Reward: 7.4257
+2026-01-09 05:19:38 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4798, Avg Reward: 7.4304
+2026-01-09 05:19:38 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4771, Avg Reward: 7.4364
+2026-01-09 05:19:38 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:38 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:39 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4762, Avg Reward: 7.4537
+2026-01-09 05:19:39 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4765, Avg Reward: 7.4534
+2026-01-09 05:19:39 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4748, Avg Reward: 7.4563
+2026-01-09 05:19:39 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:39 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:39 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4718, Avg Reward: 7.4784
+2026-01-09 05:19:39 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4596, Avg Reward: 7.5095
+2026-01-09 05:19:39 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4542, Avg Reward: 7.5300
+2026-01-09 05:19:39 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:40 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:40 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4419, Avg Reward: 7.6350
+2026-01-09 05:19:40 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4364, Avg Reward: 7.6508
+2026-01-09 05:19:40 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4342, Avg Reward: 7.6615
+2026-01-09 05:19:40 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:41 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:41 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4372, Avg Reward: 7.6699
+2026-01-09 05:19:41 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.4237, Avg Reward: 7.7080
+2026-01-09 05:19:41 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.4231, Avg Reward: 7.7233
+2026-01-09 05:19:41 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:42 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:42 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.4059, Avg Reward: 7.8615
+2026-01-09 05:19:42 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.3976, Avg Reward: 7.8875
+2026-01-09 05:19:42 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.3886, Avg Reward: 7.9174
+2026-01-09 05:19:42 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:43 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:43 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.3947, Avg Reward: 7.9375
+2026-01-09 05:19:43 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.3813, Avg Reward: 7.9724
+2026-01-09 05:19:43 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.3738, Avg Reward: 7.9959
+2026-01-09 05:19:43 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:43 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:43 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.3547, Avg Reward: 8.1560
+2026-01-09 05:19:44 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.3559, Avg Reward: 8.1550
+2026-01-09 05:19:44 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.3596, Avg Reward: 8.1494
+2026-01-09 05:19:44 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:44 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:44 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.3734, Avg Reward: 8.0524
+2026-01-09 05:19:44 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.3488, Avg Reward: 8.1196
+2026-01-09 05:19:45 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.3670, Avg Reward: 8.1008
+2026-01-09 05:19:45 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:45 - quadra_matrix_spi - [32mINFO[0m - save_weights:384 - Saved neural network weights to /workspaces/quadra-matrix-a.i./dashboard_state/oscillator_weights.pth
+2026-01-09 05:19:45 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:45 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.3263, Avg Reward: 8.3233
+2026-01-09 05:19:45 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.3008, Avg Reward: 8.3975
+2026-01-09 05:19:45 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.3082, Avg Reward: 8.4112
+2026-01-09 05:19:45 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:46 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:46 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.2750, Avg Reward: 8.6362
+2026-01-09 05:19:46 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.2658, Avg Reward: 8.6667
+2026-01-09 05:19:46 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.2511, Avg Reward: 8.7101
+2026-01-09 05:19:46 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:47 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:47 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.2665, Avg Reward: 8.7210
+2026-01-09 05:19:47 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.2214, Avg Reward: 8.8676
+2026-01-09 05:19:47 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.2079, Avg Reward: 8.9498
+2026-01-09 05:19:47 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:47 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:48 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.2486, Avg Reward: 8.8476
+2026-01-09 05:19:48 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.2067, Avg Reward: 8.9837
+2026-01-09 05:19:48 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1904, Avg Reward: 9.0716
+2026-01-09 05:19:48 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:48 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:49 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1782, Avg Reward: 9.3483
+2026-01-09 05:19:49 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.2419, Avg Reward: 9.1724
+2026-01-09 05:19:49 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.2117, Avg Reward: 9.1846
+2026-01-09 05:19:49 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:49 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:49 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.0985, Avg Reward: 10.0546
+2026-01-09 05:19:49 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1636, Avg Reward: 9.8516
+2026-01-09 05:19:50 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.0772, Avg Reward: 9.9890
+2026-01-09 05:19:50 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:50 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:50 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.0837, Avg Reward: 10.1971
+2026-01-09 05:19:50 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.2010, Avg Reward: 9.8028
+2026-01-09 05:19:50 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.0768, Avg Reward: 9.9559
+2026-01-09 05:19:50 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:51 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:51 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.2049, Avg Reward: 9.3628
+2026-01-09 05:19:51 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1712, Avg Reward: 9.4710
+2026-01-09 05:19:51 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1327, Avg Reward: 9.5937
+2026-01-09 05:19:51 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:52 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:52 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1889, Avg Reward: 9.4204
+2026-01-09 05:19:52 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.2057, Avg Reward: 9.3709
+2026-01-09 05:19:52 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1609, Avg Reward: 9.4591
+2026-01-09 05:19:52 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:52 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:53 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.2308, Avg Reward: 9.1333
+2026-01-09 05:19:53 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1633, Avg Reward: 9.3763
+2026-01-09 05:19:53 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1473, Avg Reward: 9.4873
+2026-01-09 05:19:53 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:53 - quadra_matrix_spi - [32mINFO[0m - save_weights:384 - Saved neural network weights to /workspaces/quadra-matrix-a.i./dashboard_state/oscillator_weights.pth
+2026-01-09 05:19:53 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:53 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1780, Avg Reward: 9.5145
+2026-01-09 05:19:54 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.0905, Avg Reward: 9.8234
+2026-01-09 05:19:54 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.0896, Avg Reward: 9.9288
+2026-01-09 05:19:54 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:54 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:54 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1720, Avg Reward: 9.5632
+2026-01-09 05:19:54 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1012, Avg Reward: 9.7994
+2026-01-09 05:19:54 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1266, Avg Reward: 9.8297
+2026-01-09 05:19:54 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:55 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:55 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1012, Avg Reward: 10.0377
+2026-01-09 05:19:55 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1793, Avg Reward: 9.7748
+2026-01-09 05:19:55 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.2110, Avg Reward: 9.6220
+2026-01-09 05:19:55 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:56 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:56 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1578, Avg Reward: 9.6560
+2026-01-09 05:19:56 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.2027, Avg Reward: 9.5042
+2026-01-09 05:19:56 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1792, Avg Reward: 9.5031
+2026-01-09 05:19:56 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:57 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:57 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1674, Avg Reward: 9.6106
+2026-01-09 05:19:57 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1296, Avg Reward: 9.7362
+2026-01-09 05:19:57 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1159, Avg Reward: 9.8190
+2026-01-09 05:19:57 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:57 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:58 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.0730, Avg Reward: 10.2826
+2026-01-09 05:19:58 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.0710, Avg Reward: 10.2912
+2026-01-09 05:19:58 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1309, Avg Reward: 10.1641
+2026-01-09 05:19:58 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:58 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:58 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1175, Avg Reward: 9.9627
+2026-01-09 05:19:58 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.2002, Avg Reward: 9.6723
+2026-01-09 05:19:58 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1121, Avg Reward: 9.7853
+2026-01-09 05:19:58 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:19:59 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:19:59 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1505, Avg Reward: 9.7483
+2026-01-09 05:19:59 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1953, Avg Reward: 9.5916
+2026-01-09 05:19:59 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1035, Avg Reward: 9.7566
+2026-01-09 05:19:59 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:20:00 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:20:00 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1167, Avg Reward: 9.9569
+2026-01-09 05:20:00 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1133, Avg Reward: 9.9729
+2026-01-09 05:20:00 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.0676, Avg Reward: 10.0874
+2026-01-09 05:20:00 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:20:01 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:20:01 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1540, Avg Reward: 9.7076
+2026-01-09 05:20:01 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1035, Avg Reward: 9.8940
+2026-01-09 05:20:01 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1006, Avg Reward: 9.9661
+2026-01-09 05:20:01 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:20:01 - quadra_matrix_spi - [32mINFO[0m - save_weights:384 - Saved neural network weights to /workspaces/quadra-matrix-a.i./dashboard_state/oscillator_weights.pth
+2026-01-09 05:20:01 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:20:02 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1452, Avg Reward: 9.8001
+2026-01-09 05:20:02 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1445, Avg Reward: 9.7982
+2026-01-09 05:20:02 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.0592, Avg Reward: 9.9968
+2026-01-09 05:20:02 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:20:02 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:20:02 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1105, Avg Reward: 10.0208
+2026-01-09 05:20:02 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1486, Avg Reward: 9.8939
+2026-01-09 05:20:03 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1464, Avg Reward: 9.8561
+2026-01-09 05:20:03 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:20:03 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:20:03 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.1104, Avg Reward: 10.0170
+2026-01-09 05:20:03 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.0628, Avg Reward: 10.1896
+2026-01-09 05:20:03 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1020, Avg Reward: 10.1601
+2026-01-09 05:20:03 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:20:04 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:20:04 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.0622, Avg Reward: 10.3692
+2026-01-09 05:20:04 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1006, Avg Reward: 10.2369
+2026-01-09 05:20:04 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.0527, Avg Reward: 10.3099
+2026-01-09 05:20:04 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-09 05:20:05 - quadra_matrix_spi - [32mINFO[0m - train:309 - Starting spiking neural network training...
+2026-01-09 05:20:05 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 1/3, Loss: 0.0586, Avg Reward: 10.4018
+2026-01-09 05:20:05 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1021, Avg Reward: 10.2481
+2026-01-09 05:20:05 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1367, Avg Reward: 10.1198
+2026-01-09 05:20:05 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
