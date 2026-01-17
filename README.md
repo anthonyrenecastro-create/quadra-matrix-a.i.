@@ -68,6 +68,37 @@ Mid Training (Batch 10-15):
 - **Speedup**: Exponential with success streaks
 - **Memory**: Efficient (field_size=100, CPU-compatible)
 
+## 🚀 See Cognition in Action (Start Here!)
+
+### One-Command Demo
+
+```bash
+python demo_cognition.py
+```
+
+Then **choose option 7** for the complete demonstration (~2 minutes).
+
+### What You'll Observe
+
+- 🧠 **Neural Spiking**: Watch 15-20% of neurons fire at each step
+- 📡 **Field Coherence**: Track global system stability (0-1 scale)
+- 💾 **Memory Consolidation**: See exponential learning happen
+- ⚡ **Symbolic Reasoning**: Watch knowledge graphs build
+- 🎯 **Integrated Cognition**: All systems working together
+
+### Example Output
+
+```
+🔴 Field Update Network: 42 neurons firing (16.80%)
+📡 Field Coherence: 0.658 🔒 HIGH
+💾 Memory Magnitude: 0.8234
+⚡ Concepts Analyzed: 3
+```
+
+**➜ For detailed guide, see: [QUICK_COGNITION_START.md](./QUICK_COGNITION_START.md)**
+
+**➜ For deep explanation, see: [COGNITION_OBSERVATION_GUIDE.md](./COGNITION_OBSERVATION_GUIDE.md)**
+
 ## Installation
 
 ```bash
