@@ -1,0 +1,1472 @@
+nohup: ignoring input
+[nltk_data] Downloading package punkt to /home/codespace/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /home/codespace/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+INFO:demo_cognition:Initializing Quadra Matrix Cognition Demo (field_size=100, device=cpu)
+INFO:demo_cognition:✓ Oscillatory Synapse Theory Engine initialized
+INFO:quadra_matrix_spi:Symbolic Predictive Interpreter initialized with knowledge graph.
+INFO:demo_cognition:✓ Symbolic Predictive Interpreter initialized
+INFO:__main__:✨ Neural Command Center - Web Version
+INFO:__main__:   Three planes: Physiology | Deliberation | World Interface
+INFO:__main__:   Access via browser at: http://localhost:8050
+INFO:__main__:
+ * Serving Flask app 'neural_command_center_web'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8050
+ * Running on http://10.0.1.82:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:44:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:44:54] "GET /video_feed HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:44:56] "GET / HTTP/1.1" 200 -
+INFO:__main__:🚀 Neural Command Center ACTIVATED
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:03] "GET /start HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:03] "GET /video_feed?1768639503130 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:03] "GET /video_feed?1768639503330 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:04] "GET /video_feed?1768639503530 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:04] "GET /video_feed?1768639503730 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:04] "GET /video_feed?1768639503930 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:04] "GET /video_feed?1768639504131 HTTP/1.1" 200 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:05] "[35m[1mGET /video_feed?1768639504330 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:05] "[35m[1mGET /video_feed?1768639504530 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3034, in draw
+    self._update_title_position(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 2967, in _update_title_position
+    if (ax.xaxis.get_ticks_position() in ['top', 'unknown']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2491, in get_ticks_position
+    self._get_ticks_position()]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2217, in _get_ticks_position
+    minor = self.minorTicks[0]
+            ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:05] "[35m[1mGET /video_feed?1768639504731 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:05] "GET /video_feed?1768639504929 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:06] "GET /video_feed?1768639505930 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:06] "GET /video_feed?1768639506129 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:07] "GET /video_feed?1768639506329 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:07] "GET /video_feed?1768639506729 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:07] "GET /video_feed?1768639506930 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:08] "GET /video_feed?1768639507330 HTTP/1.1" 200 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:08] "[35m[1mGET /video_feed?1768639507530 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:09] "GET /video_feed?1768639507730 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:09] "GET /video_feed?1768639507929 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:09] "GET /video_feed?1768639508130 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:09] "GET /video_feed?1768639508330 HTTP/1.1" 200 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:10] "[35m[1mGET /video_feed?1768639508530 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:10] "GET /video_feed?1768639509130 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:10] "GET /video_feed?1768639509331 HTTP/1.1" 200 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3034, in draw
+    self._update_title_position(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 2967, in _update_title_position
+    if (ax.xaxis.get_ticks_position() in ['top', 'unknown']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2491, in get_ticks_position
+    self._get_ticks_position()]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2217, in _get_ticks_position
+    minor = self.minorTicks[0]
+            ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:10] "[35m[1mGET /video_feed?1768639510129 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:11] "GET /video_feed?1768639510330 HTTP/1.1" 200 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3034, in draw
+    self._update_title_position(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 2967, in _update_title_position
+    if (ax.xaxis.get_ticks_position() in ['top', 'unknown']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2491, in get_ticks_position
+    self._get_ticks_position()]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2216, in _get_ticks_position
+    major = self.majorTicks[0]
+            ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:11] "[35m[1mGET /video_feed?1768639510530 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:11] "GET /video_feed?1768639510730 HTTP/1.1" 200 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:12] "[35m[1mGET /video_feed?1768639510930 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:13] "[35m[1mGET /video_feed?1768639511130 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:13] "[35m[1mGET /video_feed?1768639511330 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:14] "GET /video_feed?1768639511530 HTTP/1.1" 200 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:15] "[35m[1mGET /video_feed?1768639511730 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:16] "[35m[1mGET /video_feed?1768639511930 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3034, in draw
+    self._update_title_position(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 2967, in _update_title_position
+    if (ax.xaxis.get_ticks_position() in ['top', 'unknown']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2491, in get_ticks_position
+    self._get_ticks_position()]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2216, in _get_ticks_position
+    major = self.majorTicks[0]
+            ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:17] "[35m[1mGET /video_feed?1768639512130 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:17] "[35m[1mGET /video_feed?1768639512330 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:19] "[35m[1mGET /video_feed?1768639512530 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:19] "[35m[1mGET /video_feed?1768639512729 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3034, in draw
+    self._update_title_position(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 2967, in _update_title_position
+    if (ax.xaxis.get_ticks_position() in ['top', 'unknown']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2491, in get_ticks_position
+    self._get_ticks_position()]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2217, in _get_ticks_position
+    minor = self.minorTicks[0]
+            ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:20] "[35m[1mGET /video_feed?1768639512930 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:20] "[35m[1mGET /video_feed?1768639513129 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:20] "[35m[1mGET /video_feed?1768639513330 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:21] "[35m[1mGET /video_feed?1768639513530 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:21] "[35m[1mGET /video_feed?1768639513730 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3034, in draw
+    self._update_title_position(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 2967, in _update_title_position
+    if (ax.xaxis.get_ticks_position() in ['top', 'unknown']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2491, in get_ticks_position
+    self._get_ticks_position()]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axis.py", line 2216, in _get_ticks_position
+    major = self.majorTicks[0]
+            ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:21] "[35m[1mGET /video_feed?1768639514129 HTTP/1.1[0m" 500 -
+ERROR:neural_command_center_web:Exception on /video_feed [GET]
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 574, in video_feed
+    buf = center.render_frame()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./neural_command_center_web.py", line 251, in render_frame
+    self.fig.savefig(buf, format='png', facecolor='#000000', dpi=100)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 748, in draw
+    bbox, info, descent = self._get_layout(renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/matplotlib/text.py", line 375, in _get_layout
+    ismath="TeX" if self.get_usetex() else False, dpi=self.figure.dpi)
+                                                      ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dpi'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:22] "[35m[1mGET /video_feed?1768639513930 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:22] "GET /video_feed?1768639514329 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:22] "GET /video_feed?1768639514529 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:22] "GET /video_feed?1768639514729 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:22] "GET /video_feed?1768639514930 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:22] "GET /video_feed?1768639515130 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:22] "GET /video_feed?1768639515330 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639515530 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639515729 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639515930 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639516130 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639516530 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639516330 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639517331 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639516929 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639516730 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639517130 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639517530 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639517729 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639517929 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639518529 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:23] "GET /video_feed?1768639518730 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639518929 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639519130 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639519330 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639519531 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639519930 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639520129 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639520330 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639520730 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639520930 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639521130 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639521330 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2026 08:45:24] "GET /video_feed?1768639521530 HTTP/1.1" 200 -
