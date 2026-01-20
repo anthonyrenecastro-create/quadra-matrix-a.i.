@@ -273,3 +273,96 @@
 2026-01-09 05:20:05 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 2/3, Loss: 0.1021, Avg Reward: 10.2481
 2026-01-09 05:20:05 - quadra_matrix_spi - [32mINFO[0m - train:364 - Epoch 3/3, Loss: 0.1367, Avg Reward: 10.1198
 2026-01-09 05:20:05 - socketio.server - [32mINFO[0m - emit:159 - emitting event "metrics_update" to all [/]
+2026-01-18 17:59:14 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at DEBUG level
+2026-01-18 17:59:14 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-18 17:59:15 - __main__ - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-18 17:59:15 - utils.security - [32mINFO[0m - init_auth:298 - Auth initialized (enabled: False)
+2026-01-18 17:59:15 - __main__ - [32mINFO[0m - <module>:1135 - Authentication initialized
+2026-01-18 17:59:15 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-18 17:59:15 - __main__ - [32mINFO[0m - <module>:1142 - Model mode set to inference
+2026-01-18 17:59:15 - __main__ - [32mINFO[0m - <module>:1144 - Starting QuadraMatrix Benchmark Dashboard...
+2026-01-18 17:59:15 - __main__ - [32mINFO[0m - <module>:1145 - Environment: development
+2026-01-18 17:59:15 - __main__ - [32mINFO[0m - <module>:1146 - Open your browser to: http://0.0.0.0:5000
+2026-01-18 17:59:15 - werkzeug - [32mINFO[0m - _log:96 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.137:5000
+2026-01-18 17:59:15 - werkzeug - [32mINFO[0m - _log:96 - [33mPress CTRL+C to quit[0m
+2026-01-18 17:59:15 - werkzeug - [32mINFO[0m - _log:96 -  * Restarting with stat
+2026-01-18 17:59:20 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at DEBUG level
+2026-01-18 17:59:20 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-18 17:59:20 - __main__ - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-18 17:59:20 - utils.security - [32mINFO[0m - init_auth:298 - Auth initialized (enabled: False)
+2026-01-18 17:59:20 - __main__ - [32mINFO[0m - <module>:1135 - Authentication initialized
+2026-01-18 17:59:20 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-18 17:59:20 - __main__ - [32mINFO[0m - <module>:1142 - Model mode set to inference
+2026-01-18 17:59:20 - __main__ - [32mINFO[0m - <module>:1144 - Starting QuadraMatrix Benchmark Dashboard...
+2026-01-18 17:59:20 - __main__ - [32mINFO[0m - <module>:1145 - Environment: development
+2026-01-18 17:59:20 - __main__ - [32mINFO[0m - <module>:1146 - Open your browser to: http://0.0.0.0:5000
+2026-01-18 17:59:20 - werkzeug - [33mWARNING[0m - _log:96 -  * Debugger is active!
+2026-01-18 17:59:20 - werkzeug - [32mINFO[0m - _log:96 -  * Debugger PIN: 378-005-073
+2026-01-18 17:59:26 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 17:59:26] "GET / HTTP/1.1" 200 -
+2026-01-18 17:59:27 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 17:59:27] "GET /socket.io/?EIO=4&transport=polling&t=PlIGmht HTTP/1.1" 200 -
+2026-01-18 17:59:28 - socketio.server - [32mINFO[0m - emit:159 - emitting event "status_message" to Yj6Fzsra1EucC4RKAAAB [/]
+2026-01-18 17:59:28 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 17:59:28] "POST /socket.io/?EIO=4&transport=polling&t=PlIGmoh&sid=YtsQNotxC-xWmZDrAAAA HTTP/1.1" 200 -
+2026-01-18 17:59:28 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 17:59:28] "GET /socket.io/?EIO=4&transport=polling&t=PlIGmon&sid=YtsQNotxC-xWmZDrAAAA HTTP/1.1" 200 -
+2026-01-18 17:59:28 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 17:59:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-18 17:59:28 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 17:59:28] "GET /socket.io/?EIO=4&transport=polling&t=PlIGmuD&sid=YtsQNotxC-xWmZDrAAAA HTTP/1.1" 200 -
+2026-01-18 17:59:28 - socketio.server - [32mINFO[0m - _handle_event:569 - received event "get_ablation_status" from Yj6Fzsra1EucC4RKAAAB [/]
+2026-01-18 17:59:28 - socketio.server - [32mINFO[0m - emit:159 - emitting event "ablation_status" to all [/]
+2026-01-18 17:59:28 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 17:59:28] "POST /socket.io/?EIO=4&transport=polling&t=PlIGmuW&sid=YtsQNotxC-xWmZDrAAAA HTTP/1.1" 200 -
+2026-01-18 17:59:28 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 17:59:28] "GET /socket.io/?EIO=4&transport=polling&t=PlIGmx5&sid=YtsQNotxC-xWmZDrAAAA HTTP/1.1" 200 -
+2026-01-18 18:00:09 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 18:00:09] "GET / HTTP/1.1" 200 -
+2026-01-18 18:00:11 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 18:00:11] "GET /socket.io/?EIO=4&transport=polling&t=PlIGxIY HTTP/1.1" 200 -
+2026-01-18 18:00:11 - socketio.server - [32mINFO[0m - emit:159 - emitting event "status_message" to ioXfR7RVKx2ZQ_UBAAAD [/]
+2026-01-18 18:00:11 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 18:00:11] "POST /socket.io/?EIO=4&transport=polling&t=PlIGxPY&sid=3KOZ_96VZBFnTzcMAAAC HTTP/1.1" 200 -
+2026-01-18 18:00:11 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 18:00:11] "GET /socket.io/?EIO=4&transport=polling&t=PlIGxPZ&sid=3KOZ_96VZBFnTzcMAAAC HTTP/1.1" 200 -
+2026-01-18 18:00:11 - socketio.server - [32mINFO[0m - _handle_event:569 - received event "get_ablation_status" from ioXfR7RVKx2ZQ_UBAAAD [/]
+2026-01-18 18:00:11 - socketio.server - [32mINFO[0m - emit:159 - emitting event "ablation_status" to all [/]
+2026-01-18 18:00:11 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 18:00:11] "POST /socket.io/?EIO=4&transport=polling&t=PlIGxSe&sid=3KOZ_96VZBFnTzcMAAAC HTTP/1.1" 200 -
+2026-01-18 18:00:11 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 18:00:11] "GET /socket.io/?EIO=4&transport=polling&t=PlIGxSb&sid=3KOZ_96VZBFnTzcMAAAC HTTP/1.1" 200 -
+2026-01-18 18:00:12 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 18:00:12] "GET /socket.io/?EIO=4&transport=polling&t=PlIGxW5&sid=3KOZ_96VZBFnTzcMAAAC HTTP/1.1" 200 -
+2026-01-18 18:00:19 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 18:00:19] "GET /socket.io/?EIO=4&transport=websocket&sid=YtsQNotxC-xWmZDrAAAA HTTP/1.1" 200 -
+2026-01-18 18:01:15 - werkzeug - [32mINFO[0m - _log:96 - 127.0.0.1 - - [18/Jan/2026 18:01:15] "GET /socket.io/?EIO=4&transport=websocket&sid=3KOZ_96VZBFnTzcMAAAC HTTP/1.1" 200 -
+2026-01-18 18:19:56 - werkzeug - [32mINFO[0m - _log:96 -  * Detected change in '/workspaces/quadra-matrix-a.i./quadra_matrix_gpu.py', reloading
+2026-01-18 18:20:01 - werkzeug - [32mINFO[0m - _log:96 -  * Restarting with stat
+2026-01-18 18:20:14 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at DEBUG level
+2026-01-18 18:20:14 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-18 18:20:14 - __main__ - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-18 18:20:14 - utils.security - [32mINFO[0m - init_auth:298 - Auth initialized (enabled: False)
+2026-01-18 18:20:14 - __main__ - [32mINFO[0m - <module>:1135 - Authentication initialized
+2026-01-18 18:20:14 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-18 18:20:14 - __main__ - [32mINFO[0m - <module>:1142 - Model mode set to inference
+2026-01-18 18:20:14 - __main__ - [32mINFO[0m - <module>:1144 - Starting QuadraMatrix Benchmark Dashboard...
+2026-01-18 18:20:14 - __main__ - [32mINFO[0m - <module>:1145 - Environment: development
+2026-01-18 18:20:14 - __main__ - [32mINFO[0m - <module>:1146 - Open your browser to: http://0.0.0.0:5000
+2026-01-18 18:20:14 - werkzeug - [33mWARNING[0m - _log:96 -  * Debugger is active!
+2026-01-18 18:20:14 - werkzeug - [32mINFO[0m - _log:96 -  * Debugger PIN: 378-005-073
+2026-01-18 18:20:40 - werkzeug - [32mINFO[0m - _log:96 -  * Detected change in '/workspaces/quadra-matrix-a.i./train_multicore.py', reloading
+2026-01-18 18:20:42 - werkzeug - [32mINFO[0m - _log:96 -  * Restarting with stat
+2026-01-18 18:20:52 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at DEBUG level
+2026-01-18 18:20:52 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-18 18:20:52 - __main__ - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-18 18:20:52 - utils.security - [32mINFO[0m - init_auth:298 - Auth initialized (enabled: False)
+2026-01-18 18:20:52 - __main__ - [32mINFO[0m - <module>:1135 - Authentication initialized
+2026-01-18 18:20:52 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-18 18:20:52 - __main__ - [32mINFO[0m - <module>:1142 - Model mode set to inference
+2026-01-18 18:20:52 - __main__ - [32mINFO[0m - <module>:1144 - Starting QuadraMatrix Benchmark Dashboard...
+2026-01-18 18:20:52 - __main__ - [32mINFO[0m - <module>:1145 - Environment: development
+2026-01-18 18:20:52 - __main__ - [32mINFO[0m - <module>:1146 - Open your browser to: http://0.0.0.0:5000
+2026-01-18 18:20:52 - werkzeug - [33mWARNING[0m - _log:96 -  * Debugger is active!
+2026-01-18 18:20:52 - werkzeug - [32mINFO[0m - _log:96 -  * Debugger PIN: 378-005-073
+2026-01-18 18:22:01 - werkzeug - [32mINFO[0m - _log:96 -  * Detected change in '/workspaces/quadra-matrix-a.i./train_multicore.py', reloading
+2026-01-18 18:22:02 - werkzeug - [32mINFO[0m - _log:96 -  * Restarting with stat
+2026-01-18 18:22:09 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at DEBUG level
+2026-01-18 18:22:09 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-18 18:22:09 - __main__ - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-18 18:22:09 - utils.security - [32mINFO[0m - init_auth:298 - Auth initialized (enabled: False)
+2026-01-18 18:22:09 - __main__ - [32mINFO[0m - <module>:1135 - Authentication initialized
+2026-01-18 18:22:09 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-18 18:22:09 - __main__ - [32mINFO[0m - <module>:1142 - Model mode set to inference
+2026-01-18 18:22:09 - __main__ - [32mINFO[0m - <module>:1144 - Starting QuadraMatrix Benchmark Dashboard...
+2026-01-18 18:22:09 - __main__ - [32mINFO[0m - <module>:1145 - Environment: development
+2026-01-18 18:22:09 - __main__ - [32mINFO[0m - <module>:1146 - Open your browser to: http://0.0.0.0:5000
+2026-01-18 18:22:09 - werkzeug - [33mWARNING[0m - _log:96 -  * Debugger is active!
+2026-01-18 18:22:09 - werkzeug - [32mINFO[0m - _log:96 -  * Debugger PIN: 378-005-073
