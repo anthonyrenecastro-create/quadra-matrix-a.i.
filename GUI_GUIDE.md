@@ -1,4 +1,4 @@
-# Quadra Matrix Cognition Visualizer - GUI Guide
+# CognitionSim Cognition Visualizer - GUI Guide
 
 ## Quick Start
 
@@ -249,4 +249,4 @@ python gui_cognition.py
 
 ---
 
-Enjoy exploring Quadra Matrix cognition visually! 🧠✨
+Enjoy exploring CognitionSim cognition visually! 🧠✨

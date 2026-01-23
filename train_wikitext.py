@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quadra Matrix Training with WikiText Dataset
+CognitionSim Training with WikiText Dataset
 Trains the Symbolic Predictive Interpreter on Wikipedia text data
 """
 
@@ -34,11 +34,11 @@ async def main():
     
     try:
         # Import trainer
-        from train_quadra_matrix import QuadraMatrixTrainer
+        from train_quadra_matrix import CognitionSimTrainer
         
         # Initialize trainer with moderate configuration for WikiText
-        logger.info("Initializing QuadraMatrixTrainer with field_size=150...")
-        trainer = QuadraMatrixTrainer(field_size=150, device='cpu', enable_noise=True)
+        logger.info("Initializing CognitionSimTrainer with field_size=150...")
+        trainer = CognitionSimTrainer(field_size=150, device='cpu', enable_noise=True)
         
         # Start training on WikiText-2 dataset
         logger.info("Starting training on WikiText-2 dataset...")

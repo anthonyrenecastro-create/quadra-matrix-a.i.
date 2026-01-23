@@ -100,12 +100,12 @@ async def run_training():
     training_state['start_time'] = time.time()
     
     try:
-        logger.info("Initializing QuadraMatrixTrainer...")
-        from train_quadra_matrix import QuadraMatrixTrainer
+        logger.info("Initializing CognitionSimTrainer...")
+        from train_quadra_matrix import CognitionSimTrainer
         
         training_state['status'] = 'training'
         
-        trainer = QuadraMatrixTrainer(
+        trainer = CognitionSimTrainer(
             field_size=150,
             device='cpu',
             enable_noise=True,
@@ -222,7 +222,7 @@ def create_live_dashboard_app():
     from flask_socketio import SocketIO, emit, disconnect
     
     app = Flask(__name__, template_folder='templates')
-    app.config['SECRET_KEY'] = 'quadra-matrix-training-live'
+    app.config['SECRET_KEY'] = 'cognitionsim-training-live'
     socketio = SocketIO(
         app, 
         cors_allowed_origins="*",

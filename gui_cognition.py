@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quadra Matrix Cognition - Visual GUI Demonstration
+CognitionSim Cognition - Visual GUI Demonstration
 Interactive graphical interface to observe cognitive processes in real-time.
 
 Features:
@@ -42,7 +42,7 @@ class CognitionGUI:
     
     def __init__(self, root):
         self.root = root
-        self.root.title("🧠 Quadra Matrix Cognition Visualizer")
+        self.root.title("🧠 CognitionSim Cognition Visualizer")
         self.root.geometry("1400x900")
         self.root.configure(bg='#f0f0f0')
         

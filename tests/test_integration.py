@@ -1,5 +1,5 @@
 """
-Integration tests for Quadra Matrix A.I. system
+Integration tests for CognitionSim system
 """
 import pytest
 import asyncio

@@ -35,7 +35,7 @@ class DistributedTracing:
     
     def __init__(
         self,
-        service_name: str = "quadra-matrix",
+        service_name: str = "cognitionsim",
         service_version: str = "1.0.0",
         environment: str = "production",
         exporter_type: str = "jaeger"
@@ -261,7 +261,7 @@ class DistributedTracing:
 
 def setup_distributed_tracing(
     app: Flask,
-    service_name: str = "quadra-matrix",
+    service_name: str = "cognitionsim",
     exporter_type: str = "jaeger"
 ) -> DistributedTracing:
     """
@@ -333,13 +333,13 @@ services:
       - monitoring
 
   # Your application
-  quadra-matrix:
+  cognitionsim:
     build: .
     environment:
       - JAEGER_HOST=jaeger
       - JAEGER_PORT=6831
       - TRACING_EXPORTER=jaeger
-      - SERVICE_NAME=quadra-matrix
+      - SERVICE_NAME=cognitionsim
     depends_on:
       - jaeger
     networks:
@@ -368,12 +368,12 @@ services:
       - monitoring
 
   # Your application
-  quadra-matrix:
+  cognitionsim:
     build: .
     environment:
       - ZIPKIN_URL=http://zipkin:9411/api/v2/spans
       - TRACING_EXPORTER=zipkin
-      - SERVICE_NAME=quadra-matrix
+      - SERVICE_NAME=cognitionsim
     depends_on:
       - zipkin
     networks:

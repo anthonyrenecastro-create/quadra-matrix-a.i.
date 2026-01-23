@@ -1,4 +1,4 @@
-# Quadra Matrix A.I. - Development Dependencies
+# CognitionSim - Development Dependencies
 # Include production dependencies
 -r requirements.txt
 

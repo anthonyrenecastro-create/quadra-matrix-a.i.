@@ -1,5 +1,5 @@
 """
-Database models and persistence layer for Quadra Matrix A.I.
+Database models and persistence layer for CognitionSim
 SQLAlchemy-based database for state persistence
 """
 import os
@@ -112,7 +112,7 @@ class ModelVersion(Base):
 
 
 class Database:
-    """Database manager for Quadra Matrix"""
+    """Database manager for CognitionSim"""
     
     def __init__(self, database_url: Optional[str] = None):
         """

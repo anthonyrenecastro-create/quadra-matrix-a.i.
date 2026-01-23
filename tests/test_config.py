@@ -10,7 +10,7 @@ from config import Config, DevelopmentConfig, ProductionConfig, get_config
 def test_default_config():
     """Test default configuration values"""
     config = Config()
-    assert config.APP_NAME == "Quadra Matrix A.I."
+    assert config.APP_NAME == "CognitionSim"
     assert config.VERSION == "1.0.0"
     assert config.FIELD_SIZE == 100
     assert config.DEVICE == 'cpu'
@@ -38,13 +38,19 @@ def test_get_config():
     assert isinstance(dev_config, type)
     assert dev_config.DEBUG is True
     
+    # Save original SECRET_KEY if it exists
+    original_secret_key = os.environ.get('SECRET_KEY')
+    
     # Production config requires SECRET_KEY to be set
     os.environ['SECRET_KEY'] = 'test-secret-key-for-testing'
     try:
         prod_config = get_config('production')
         assert prod_config.DEBUG is False
     finally:
-        if 'SECRET_KEY' in os.environ:
+        # Restore original state
+        if original_secret_key is not None:
+            os.environ['SECRET_KEY'] = original_secret_key
+        elif 'SECRET_KEY' in os.environ:
             del os.environ['SECRET_KEY']
 
 

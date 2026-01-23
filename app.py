@@ -480,9 +480,9 @@ def handle_disconnect():
 
 @socketio.on('initialize_system')
 def handle_initialize():
-    """Initialize the QuadraMatrix system"""
+    """Initialize the CognitionSim system"""
     try:
-        socketio.emit('status_message', {'message': 'Initializing QuadraMatrix System...', 'type': 'info'})
+        socketio.emit('status_message', {'message': 'Initializing CognitionSim System...', 'type': 'info'})
         
         state.oscillator = OscillatorySynapseTheory(field_size=state.field_size)
         state.core_field = CoreField(size=state.field_size)
@@ -1141,7 +1141,7 @@ if __name__ == '__main__':
         mode_manager.enter_inference_mode()
         logger.info("Model mode set to inference")
     
-    logger.info(f"Starting QuadraMatrix Benchmark Dashboard...")
+    logger.info(f"Starting CognitionSim Benchmark Dashboard...")
     logger.info(f"Environment: {getattr(config, 'FLASK_ENV', 'development')}")
     logger.info(f"Open your browser to: http://{host}:{port}")
     

@@ -1,5 +1,5 @@
 """
-Noise Injection Module for Quadra Matrix AI
+Noise Injection Module for CognitionSim AI
 Adds various types of noise for robustness testing and adversarial training
 """
 

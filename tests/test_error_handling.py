@@ -3,7 +3,7 @@ Tests for error handling utilities
 """
 import pytest
 from utils.error_handling import (
-    QuadraMatrixError,
+    CognitionSimError,
     InitializationError,
     TrainingError,
     StateError,
@@ -22,20 +22,20 @@ class TestCustomExceptions:
     """Test custom exception classes"""
     
     def test_base_exception(self):
-        """Test base QuadraMatrixError"""
-        error = QuadraMatrixError("Test error", details={'key': 'value'})
+        """Test base CognitionSimError"""
+        error = CognitionSimError("Test error", details={'key': 'value'})
         assert error.message == "Test error"
         assert error.details == {'key': 'value'}
     
     def test_initialization_error(self):
         """Test InitializationError"""
         error = InitializationError("Init failed")
-        assert isinstance(error, QuadraMatrixError)
+        assert isinstance(error, CognitionSimError)
     
     def test_training_error(self):
         """Test TrainingError"""
         error = TrainingError("Training failed")
-        assert isinstance(error, QuadraMatrixError)
+        assert isinstance(error, CognitionSimError)
 
 
 class TestHandleErrors:
@@ -65,7 +65,7 @@ class TestHandleErrors:
         def failing_function():
             raise ValueError("Unexpected")
         
-        with pytest.raises(QuadraMatrixError):
+        with pytest.raises(CognitionSimError):
             failing_function()
 
 

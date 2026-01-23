@@ -1,5 +1,5 @@
 """
-Environment-based configuration for Quadra Matrix A.I.
+Environment-based configuration for CognitionSim
 """
 import os
 from pathlib import Path
@@ -10,7 +10,7 @@ class Config:
     """Base configuration class"""
     
     # Application
-    APP_NAME = "Quadra Matrix A.I."
+    APP_NAME = "CognitionSim"
     VERSION = "1.0.0"
     
     # Flask
@@ -103,7 +103,8 @@ class ProductionConfig(Config):
     # Require secret key in production
     @classmethod
     def validate(cls):
-        if cls.SECRET_KEY == 'dev-secret-key-change-in-production':
+        secret_key = os.getenv('SECRET_KEY', cls.SECRET_KEY)
+        if secret_key == 'dev-secret-key-change-in-production':
             raise ValueError("Must set SECRET_KEY in production environment")
         if not os.getenv('SECRET_KEY'):
             raise ValueError("SECRET_KEY environment variable must be set in production")

@@ -1,7 +1,7 @@
 #!/bin/bash
-# Quadra Matrix A.I. - Quick Launch Scripts
+# CognitionSim - Quick Launch Scripts
 
-echo "🌟 Quadra Matrix A.I. - Launch Options"
+echo "🌟 CognitionSim - Launch Options"
 echo "======================================"
 echo ""
 echo "Choose how to launch:"
@@ -10,7 +10,7 @@ echo "1. Interactive Menu (recommended)"
 echo "   python launch.py"
 echo ""
 echo "2. Quick Demo (20 batches, ~2 minutes)"
-echo "   python -c \"import asyncio; from train_quadra_matrix import QuadraMatrixTrainer; asyncio.run(QuadraMatrixTrainer(100).train('wikitext', 'wikitext-2-raw-v1', 20, 5))\""
+echo "   python -c \"import asyncio; from train_quadra_matrix import CognitionSimTrainer; asyncio.run(CognitionSimTrainer(100).train('wikitext', 'wikitext-2-raw-v1', 20, 5))\""
 echo ""
 echo "3. Full Training (100 batches, ~10 minutes)"
 echo "   python train_quadra_matrix.py"
@@ -31,7 +31,7 @@ case $choice in
         ;;
     2)
         echo "🚀 Starting quick demo..."
-        python -c "import asyncio; from train_quadra_matrix import QuadraMatrixTrainer; asyncio.run(QuadraMatrixTrainer(100, 'cpu').train('wikitext', 'wikitext-2-raw-v1', 20, 5))"
+        python -c "import asyncio; from train_quadra_matrix import CognitionSimTrainer; asyncio.run(CognitionSimTrainer(100, 'cpu').train('wikitext', 'wikitext-2-raw-v1', 20, 5))"
         ;;
     3)
         echo "📊 Starting full training..."

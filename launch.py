@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quadra Matrix A.I. - Simple Launcher
+CognitionSim - Simple Launcher
 No GUI needed - runs from command line with interactive menu
 """
 
@@ -31,9 +31,9 @@ async def quick_demo():
     print("\n🚀 Starting Quick Demo...")
     print("This will train on WikiText-2 for 20 batches (~2 minutes)\n")
     
-    from train_quadra_matrix import QuadraMatrixTrainer
+    from train_quadra_matrix import CognitionSimTrainer
     
-    trainer = QuadraMatrixTrainer(field_size=100, device='cpu')
+    trainer = CognitionSimTrainer(field_size=100, device='cpu')
     await trainer.train(
         dataset_name='wikitext',
         dataset_config='wikitext-2-raw-v1',
@@ -49,9 +49,9 @@ async def full_training():
     print("\n📊 Starting Full Training...")
     print("This will train on WikiText-2 for 100 batches (~10 minutes)\n")
     
-    from train_quadra_matrix import QuadraMatrixTrainer
+    from train_quadra_matrix import CognitionSimTrainer
     
-    trainer = QuadraMatrixTrainer(field_size=100, device='cpu')
+    trainer = CognitionSimTrainer(field_size=100, device='cpu')
     await trainer.train(
         dataset_name='wikitext',
         dataset_config='wikitext-2-raw-v1',
@@ -104,9 +104,9 @@ async def custom_training():
     
     print("\n🚀 Starting custom training...\n")
     
-    from train_quadra_matrix import QuadraMatrixTrainer
+    from train_quadra_matrix import CognitionSimTrainer
     
-    trainer = QuadraMatrixTrainer(field_size=field_size, device=device)
+    trainer = CognitionSimTrainer(field_size=field_size, device=device)
     await trainer.train(
         dataset_name=dataset,
         dataset_config=config,
@@ -158,7 +158,7 @@ def show_help():
     print("📚 QUADRA MATRIX A.I. - DOCUMENTATION")
     print("="*80 + "\n")
     
-    print("🎯 What is Quadra Matrix?")
+    print("🎯 What is CognitionSim?")
     print("-" * 80)
     print("An AI system that trains exponentially faster than traditional approaches by")
     print("combining spiking neural networks, symbolic reasoning, and adaptive learning.\n")
@@ -218,8 +218,8 @@ async def main():
             elif choice == '6':
                 show_help()
             elif choice == '7':
-                print("👋 Thanks for using Quadra Matrix A.I.!")
-                print("Visit: https://github.com/acastro77733-ai/Quadra-Matrix-A.I.\n")
+                print("👋 Thanks for using CognitionSim!")
+                print("Visit: https://github.com/cognitionsim/cognitionsim\n")
                 break
             else:
                 print("❌ Invalid choice. Please enter 1-7.\n")

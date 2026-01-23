@@ -1,5 +1,5 @@
 #!/bin/bash
-# Quadra Matrix Cognition - GUI Launcher
+# CognitionSim Cognition - GUI Launcher
 # Run visual demonstration of cognitive processes
 
 echo ""

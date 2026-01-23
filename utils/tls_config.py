@@ -119,7 +119,7 @@ class TLSConfig:
         country: str = 'US',
         state: str = 'CA',
         locality: str = 'San Francisco',
-        organization: str = 'Quadra Matrix AI',
+        organization: str = 'CognitionSim AI',
         common_name: str = 'localhost'
     ) -> Tuple[str, str]:
         """
@@ -369,7 +369,7 @@ def setup_tls(
 
 # Nginx configuration template for TLS termination
 NGINX_TLS_CONFIG = """
-# Nginx TLS Configuration for Quadra Matrix A.I.
+# Nginx TLS Configuration for CognitionSim
 
 server {
     listen 80;

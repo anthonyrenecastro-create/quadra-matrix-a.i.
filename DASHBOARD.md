@@ -1,4 +1,4 @@
-# QuadraMatrix A.I. Dashboard
+# CognitionSim A.I. Dashboard
 
 ## Quick Start
 
@@ -24,7 +24,7 @@ Navigate to: **http://localhost:5000**
 - **Live Logs**: Stream of training events and system messages
 
 ### Control Panel
-- **Initialize System**: Set up all QuadraMatrix components (Oscillator, Core Field, Syntropy Engine, etc.)
+- **Initialize System**: Set up all CognitionSim components (Oscillator, Core Field, Syntropy Engine, etc.)
 - **Start Training**: Begin the training loop with streaming text data
 - **Stop Training**: Pause training while maintaining state
 - **Reset System**: Clear all data and return to initial state
@@ -59,7 +59,7 @@ Navigate to: **http://localhost:5000**
 
 ## Training Process
 
-The dashboard runs the QuadraMatrix training loop with:
+The dashboard runs the CognitionSim training loop with:
 - 8 diverse test texts covering quantum, neural, and AI concepts
 - 10 synthetic samples per iteration
 - 3 training epochs per batch
@@ -72,7 +72,7 @@ The dashboard runs the QuadraMatrix training loop with:
 ### Socket.IO Events
 
 **Client → Server:**
-- `initialize_system`: Initialize all QuadraMatrix components
+- `initialize_system`: Initialize all CognitionSim components
 - `start_training`: Start the training loop
 - `stop_training`: Stop the training loop
 - `reset_system`: Reset all state
@@ -152,7 +152,7 @@ Adjust `field_size` in `SystemState.__init__()` (default: 100)
 └─────────────────┬───────────────────────────┘
                   │
 ┌─────────────────▼───────────────────────────┐
-│         QuadraMatrix Components             │
+│         CognitionSim Components             │
 │  • OscillatorySynapseTheory                 │
 │  • CoreField                                │
 │  • SyntropyEngine                           │
@@ -163,4 +163,4 @@ Adjust `field_size` in `SystemState.__init__()` (default: 100)
 ```
 
 ## License
-Same as QuadraMatrix A.I. project
+Same as CognitionSim A.I. project

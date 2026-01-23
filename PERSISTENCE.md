@@ -1,4 +1,4 @@
-# QuadraMatrix A.I. - Persistent Memory System
+# CognitionSim A.I. - Persistent Memory System
 
 ## Overview
 

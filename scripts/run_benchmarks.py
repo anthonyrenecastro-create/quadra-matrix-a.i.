@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Performance Benchmark Script for Quadra Matrix A.I.
+Performance Benchmark Script for CognitionSim
 Run comprehensive performance tests
 """
 import sys
@@ -108,7 +108,7 @@ def benchmark_json_operations():
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Run Quadra Matrix performance benchmarks')
+    parser = argparse.ArgumentParser(description='Run CognitionSim performance benchmarks')
     parser.add_argument(
         '--output',
         type=str,

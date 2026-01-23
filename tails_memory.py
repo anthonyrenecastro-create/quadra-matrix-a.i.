@@ -1,5 +1,5 @@
 """
-Tails-Inspired Memory System for Quadra Matrix SPI
+Tails-Inspired Memory System for CognitionSim SPI
 Models after Tails Linux approach: RAM disk + encryption + secure erasure
 """
 
@@ -62,7 +62,7 @@ class MemoryTrace:
 
 class TailsMemoryManager:
     """
-    Tails-inspired memory system for Quadra Matrix
+    Tails-inspired memory system for CognitionSim
     
     Design principles:
     - Everything encrypted by default

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide covers the professional DevOps infrastructure for Quadra Matrix A.I., including Docker containerization, CI/CD pipelines, and production deployment.
+This guide covers the professional DevOps infrastructure for CognitionSim, including Docker containerization, CI/CD pipelines, and production deployment.
 
 ## 🐳 Docker Setup
 
@@ -10,13 +10,13 @@ This guide covers the professional DevOps infrastructure for Quadra Matrix A.I.,
 
 ```bash
 # Build the image
-docker build -t quadra-matrix-ai:latest .
+docker build -t cognitionsim-ai:latest .
 
 # Run the container
 docker run -p 5000:5000 \
   -v $(pwd)/models:/app/models \
   -v $(pwd)/dashboard_state:/app/dashboard_state \
-  quadra-matrix-ai:latest
+  cognitionsim-ai:latest
 ```
 
 ### Docker Compose (Recommended)
@@ -159,7 +159,7 @@ echo "SECRET_KEY=$(openssl rand -hex 32)" >> .env
 make deploy-docker
 
 # Monitor
-docker-compose logs -f quadra-matrix
+docker-compose logs -f cognitionsim
 ```
 
 ### Kubernetes Deployment
@@ -173,7 +173,7 @@ kubectl get pods
 kubectl get services
 
 # Access the service
-kubectl port-forward svc/quadra-matrix-ai-service 5000:80
+kubectl port-forward svc/cognitionsim-ai-service 5000:80
 ```
 
 ### Cloud Deployment Examples
@@ -183,8 +183,8 @@ kubectl port-forward svc/quadra-matrix-ai-service 5000:80
 ```bash
 # Push image to ECR
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin YOUR_ECR_REGISTRY
-docker tag quadra-matrix-ai:latest YOUR_ECR_REGISTRY/quadra-matrix-ai:latest
-docker push YOUR_ECR_REGISTRY/quadra-matrix-ai:latest
+docker tag cognitionsim-ai:latest YOUR_ECR_REGISTRY/cognitionsim-ai:latest
+docker push YOUR_ECR_REGISTRY/cognitionsim-ai:latest
 
 # Create ECS task definition and service
 aws ecs create-service --cli-input-json file://ecs-service.json
@@ -194,11 +194,11 @@ aws ecs create-service --cli-input-json file://ecs-service.json
 
 ```bash
 # Push to Google Container Registry
-gcloud builds submit --tag gcr.io/YOUR_PROJECT/quadra-matrix-ai
+gcloud builds submit --tag gcr.io/YOUR_PROJECT/cognitionsim-ai
 
 # Deploy
-gcloud run deploy quadra-matrix-ai \
-  --image gcr.io/YOUR_PROJECT/quadra-matrix-ai \
+gcloud run deploy cognitionsim-ai \
+  --image gcr.io/YOUR_PROJECT/cognitionsim-ai \
   --platform managed \
   --port 5000 \
   --memory 4Gi
@@ -208,13 +208,13 @@ gcloud run deploy quadra-matrix-ai \
 
 ```bash
 # Push to Azure Container Registry
-az acr build --registry YOUR_REGISTRY --image quadra-matrix-ai:latest .
+az acr build --registry YOUR_REGISTRY --image cognitionsim-ai:latest .
 
 # Deploy
 az container create \
   --resource-group YOUR_RG \
-  --name quadra-matrix-ai \
-  --image YOUR_REGISTRY.azurecr.io/quadra-matrix-ai:latest \
+  --name cognitionsim-ai \
+  --image YOUR_REGISTRY.azurecr.io/cognitionsim-ai:latest \
   --cpu 2 --memory 4 \
   --ports 5000
 ```
@@ -285,7 +285,7 @@ LOG_LEVEL=DEBUG python app.py
 Access logs in Docker:
 
 ```bash
-docker-compose logs -f quadra-matrix
+docker-compose logs -f cognitionsim
 ```
 
 ### Metrics Collection
@@ -315,10 +315,10 @@ pytest tests/ -v --cov=. --cov-report=html
 
 ```bash
 # Build test image
-docker build --target builder -t quadra-matrix-test .
+docker build --target builder -t cognitionsim-test .
 
 # Run tests
-docker run quadra-matrix-test pytest tests/
+docker run cognitionsim-test pytest tests/
 ```
 
 ## 📈 Performance Optimization
@@ -341,12 +341,12 @@ resources:
 
 **Docker Compose**:
 ```bash
-docker-compose up -d --scale quadra-matrix=3
+docker-compose up -d --scale cognitionsim=3
 ```
 
 **Kubernetes**:
 ```bash
-kubectl scale deployment quadra-matrix-ai --replicas=3
+kubectl scale deployment cognitionsim-ai --replicas=3
 ```
 
 ## 🔧 Troubleshooting
@@ -355,7 +355,7 @@ kubectl scale deployment quadra-matrix-ai --replicas=3
 
 ```bash
 # Check logs
-docker-compose logs quadra-matrix
+docker-compose logs cognitionsim
 
 # Check health
 docker-compose ps
@@ -368,7 +368,7 @@ docker-compose ps
 HOST_PORT=5001
 
 # Or use Docker directly
-docker run -p 5001:5000 quadra-matrix-ai
+docker run -p 5001:5000 cognitionsim-ai
 ```
 
 ### Permission Denied

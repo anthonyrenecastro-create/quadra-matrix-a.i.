@@ -51,12 +51,12 @@ class APIDocumentation:
         return {
             "openapi": "3.0.0",
             "info": {
-                "title": "Quadra Matrix A.I. API",
+                "title": "CognitionSim API",
                 "version": "1.0.0",
                 "description": "Advanced quantum-inspired field optimization system with real-time training and monitoring",
                 "contact": {
                     "name": "API Support",
-                    "email": "support@quadra-matrix.ai"
+                    "email": "support@cognitionsim.ai"
                 },
                 "license": {
                     "name": "MIT",
@@ -69,7 +69,7 @@ class APIDocumentation:
                     "description": "Development server"
                 },
                 {
-                    "url": "https://api.quadra-matrix.ai",
+                    "url": "https://api.cognitionsim.ai",
                     "description": "Production server"
                 }
             ],
@@ -584,7 +584,7 @@ class APIDocumentation:
             SWAGGER_URL,
             API_URL,
             config={
-                'app_name': "Quadra Matrix A.I. API",
+                'app_name': "CognitionSim API",
                 'docExpansion': 'list',
                 'defaultModelsExpandDepth': 3,
                 'displayRequestDuration': True,
@@ -602,7 +602,7 @@ class APIDocumentation:
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Quadra Matrix A.I. API - ReDoc</title>
+    <title>CognitionSim API - ReDoc</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">

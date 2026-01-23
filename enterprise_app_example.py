@@ -2,7 +2,7 @@
 Enterprise Features Integration Example
 
 This example demonstrates how to integrate all 9 enterprise features
-into the Quadra Matrix A.I. application.
+into the CognitionSim application.
 """
 
 import os
@@ -57,7 +57,7 @@ def create_enterprise_app():
         print("✓ Setting up distributed tracing...")
         tracing = setup_distributed_tracing(
             app,
-            service_name='quadra-matrix',
+            service_name='cognitionsim',
             exporter_type=os.getenv('TRACING_EXPORTER', 'jaeger')
         )
     else:
@@ -100,7 +100,7 @@ def create_enterprise_app():
     def index():
         """Root endpoint."""
         return jsonify({
-            'service': 'Quadra Matrix A.I.',
+            'service': 'CognitionSim',
             'version': '2.0.0',
             'status': 'Enterprise Ready',
             'features': {

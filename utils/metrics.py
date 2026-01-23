@@ -1,5 +1,5 @@
 """
-Prometheus Metrics for Quadra Matrix A.I.
+Prometheus Metrics for CognitionSim
 Custom metrics collection and exporting
 """
 import time
@@ -304,7 +304,7 @@ def set_app_info(version: str, environment: str):
     app_info.info({
         'version': version,
         'environment': environment,
-        'name': 'Quadra Matrix A.I.'
+        'name': 'CognitionSim'
     })
 
 

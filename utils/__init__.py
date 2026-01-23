@@ -16,7 +16,7 @@ from .validation import (
 )
 
 from .error_handling import (
-    QuadraMatrixError,
+    CognitionSimError,
     InitializationError,
     TrainingError,
     StateError,
@@ -54,7 +54,7 @@ __all__ = [
     'validate_metrics',
     
     # Error Handling
-    'QuadraMatrixError',
+    'CognitionSimError',
     'InitializationError',
     'TrainingError',
     'StateError',

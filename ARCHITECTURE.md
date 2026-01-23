@@ -1,8 +1,8 @@
-# Quadra-Matrix SPI Architecture
+# CognitionSim SPI Architecture
 
 ## System Overview
 
-Quadra-Matrix implements a **Stateful Symbolic Predictive Interpreter (SPI)** that combines:
+CognitionSim implements a **Stateful Symbolic Predictive Interpreter (SPI)** that combines:
 
 - **Symbolic reasoning** via pattern algebra and logical inference
 - **Spiking neural dynamics** with threshold-based activation
@@ -11,6 +11,8 @@ Quadra-Matrix implements a **Stateful Symbolic Predictive Interpreter (SPI)** th
 - **Governance-aware inference** with policy-conditioned output gating
 
 This is fundamentally incompatible with stateless commodity ML. It's an **agent architecture**, not a prediction service.
+
+> 💡 **Understanding the Language:** This document uses both poetic metaphors and mechanical specifications. For a complete dual-language reference that translates concepts like "field breathing" into precise mathematical equations, see [DUAL_LANGUAGE_GLOSSARY.md](./DUAL_LANGUAGE_GLOSSARY.md).
 
 ---
 

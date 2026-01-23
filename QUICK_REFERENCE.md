@@ -92,7 +92,7 @@ USE_HTTPS=true
 ENABLE_TRACING=true
 TRACING_EXPORTER=jaeger
 JAEGER_HOST=localhost
-SERVICE_NAME=quadra-matrix
+SERVICE_NAME=cognitionsim
 SECRET_KEY=your-secret-key
 ```
 

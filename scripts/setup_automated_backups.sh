@@ -1,5 +1,5 @@
 #!/bin/bash
-# Setup automated backups for Quadra Matrix A.I.
+# Setup automated backups for CognitionSim
 # This script configures cron jobs for automated backups
 
 set -e
@@ -25,7 +25,7 @@ if [ -f /.dockerenv ]; then
     
     # Create crontab entry
     cat > /tmp/quadra-crontab << 'EOF'
-# Quadra Matrix A.I. Automated Backups
+# CognitionSim Automated Backups
 
 # Hourly model backups (every hour)
 0 * * * * /app/scripts/backup_models.sh >> /app/logs/backup.log 2>&1
@@ -57,12 +57,12 @@ else
     
     # Add to user's crontab
     (crontab -l 2>/dev/null || echo "") | grep -v "quadra_matrix" | cat - << 'EOF' | crontab -
-# Quadra Matrix A.I. Automated Backups
-0 * * * * cd /workspaces/Quadra-M777/Quadra-Matrix-A.I.-main && ./scripts/backup_models.sh >> logs/backup.log 2>&1
-0 2 * * * cd /workspaces/Quadra-M777/Quadra-Matrix-A.I.-main && sqlite3 dashboard_state/quadra_matrix.db ".backup backups/db_backup_$(date +\%Y\%m\%d).db" >> logs/backup.log 2>&1
-0 3 * * 0 cd /workspaces/Quadra-M777/Quadra-Matrix-A.I.-main && ./scripts/full_backup.sh >> logs/backup.log 2>&1
-0 4 * * * find /workspaces/Quadra-M777/Quadra-Matrix-A.I.-main/backups -name "*.tar.gz" -mtime +30 -delete
-0 4 * * * find /workspaces/Quadra-M777/Quadra-Matrix-A.I.-main/backups -name "*.db" -mtime +30 -delete
+# CognitionSim Automated Backups
+0 * * * * cd /workspaces/Quadra-M777/CognitionSim-A.I.-main && ./scripts/backup_models.sh >> logs/backup.log 2>&1
+0 2 * * * cd /workspaces/Quadra-M777/CognitionSim-A.I.-main && sqlite3 dashboard_state/quadra_matrix.db ".backup backups/db_backup_$(date +\%Y\%m\%d).db" >> logs/backup.log 2>&1
+0 3 * * 0 cd /workspaces/Quadra-M777/CognitionSim-A.I.-main && ./scripts/full_backup.sh >> logs/backup.log 2>&1
+0 4 * * * find /workspaces/Quadra-M777/CognitionSim-A.I.-main/backups -name "*.tar.gz" -mtime +30 -delete
+0 4 * * * find /workspaces/Quadra-M777/CognitionSim-A.I.-main/backups -name "*.db" -mtime +30 -delete
 EOF
     
     echo "✅ Crontab entries added"
@@ -71,7 +71,7 @@ fi
 # Show installed cron jobs
 echo ""
 echo "📋 Installed cron jobs:"
-crontab -l | grep -A5 "Quadra Matrix"
+crontab -l | grep -A5 "CognitionSim"
 
 echo ""
 echo "✅ Automated backup setup complete!"

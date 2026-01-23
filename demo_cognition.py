@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quadra Matrix A.I. - Cognition Demonstration
+CognitionSim - Cognition Demonstration
 Interactive demo to observe and understand the cognitive system in real-time.
 
 This script demonstrates:
@@ -36,7 +36,7 @@ try:
         SymbolicConfig
     )
 except ImportError:
-    logger.error("Could not import Quadra Matrix components. Ensure quadra_matrix_spi.py is available.")
+    logger.error("Could not import CognitionSim components. Ensure quadra_matrix_spi.py is available.")
     sys.exit(1)
 
 
@@ -166,14 +166,14 @@ class CognitionObserver:
 # ============================================================================
 
 class CognitionDemo:
-    """Interactive demonstration of Quadra Matrix cognition"""
+    """Interactive demonstration of CognitionSim cognition"""
     
     def __init__(self, field_size: int = 100, device: str = 'cpu'):
         self.field_size = field_size
         self.device = device
         self.observer = CognitionObserver()
         
-        logger.info(f"Initializing Quadra Matrix Cognition Demo (field_size={field_size}, device={device})")
+        logger.info(f"Initializing CognitionSim Cognition Demo (field_size={field_size}, device={device})")
         
         # Initialize core cognitive components
         self.oscillator = OscillatorySynapseTheory(field_size=field_size, device=device)
@@ -430,7 +430,7 @@ class CognitionDemo:
                     self.observe_integrated_cognition()
                     self.observer.print_summary()
                 elif choice == '8':
-                    print("\n👋 Thank you for exploring Quadra Matrix cognition!")
+                    print("\n👋 Thank you for exploring CognitionSim cognition!")
                     break
                 else:
                     print("❌ Invalid choice. Please enter 1-8.")

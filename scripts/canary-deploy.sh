@@ -5,7 +5,7 @@ set -e
 
 # Configuration
 NAMESPACE="${NAMESPACE:-default}"
-APP_NAME="quadra-matrix"
+APP_NAME="cognitionsim"
 KUBECTL="${KUBECTL:-kubectl}"
 STABLE_DEPLOYMENT="${APP_NAME}-stable"
 CANARY_DEPLOYMENT="${APP_NAME}-canary"

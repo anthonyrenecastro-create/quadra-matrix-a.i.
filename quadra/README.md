@@ -1,6 +1,8 @@
 # Quadra Module: Stateful Symbolic Predictive Intelligence
 
-This directory contains the **core stateful architecture** for Quadra-Matrix AI—moving beyond generic ML scaffolding to concrete adaptive intelligence with governance as a first-class primitive.
+This directory contains the **core stateful architecture** for CognitionSim AI—moving beyond generic ML scaffolding to concrete adaptive intelligence with governance as a first-class primitive.
+
+> 🌊⚙️ **Dual-Language Documentation:** This system speaks in two tongues—the poetic language of consciousness and the mechanical language of computation. See [../DUAL_LANGUAGE_GLOSSARY.md](../DUAL_LANGUAGE_GLOSSARY.md) for complete translations between myth and math.
 
 ## What's In Here
 

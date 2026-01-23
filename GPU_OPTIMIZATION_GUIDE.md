@@ -1,8 +1,8 @@
-# Quadra Matrix GPU Optimization Guide
+# CognitionSim GPU Optimization Guide
 
 ## 🚀 Overview
 
-The Quadra Matrix system now includes high-performance GPU acceleration with multi-core support, delivering **10-100x speedup** over CPU-only execution.
+The CognitionSim system now includes high-performance GPU acceleration with multi-core support, delivering **10-100x speedup** over CPU-only execution.
 
 ## 📊 Performance Comparison
 

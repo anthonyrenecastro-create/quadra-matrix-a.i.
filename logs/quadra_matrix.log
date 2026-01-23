@@ -366,3 +366,1328 @@
 2026-01-18 18:22:09 - __main__ - [32mINFO[0m - <module>:1146 - Open your browser to: http://0.0.0.0:5000
 2026-01-18 18:22:09 - werkzeug - [33mWARNING[0m - _log:96 -  * Debugger is active!
 2026-01-18 18:22:09 - werkzeug - [32mINFO[0m - _log:96 -  * Debugger PIN: 378-005-073
+2026-01-23 04:31:45 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at INFO level
+2026-01-23 04:31:45 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-23 04:31:45 - app - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 04:31:46 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Temporary error. Retrying in 0.01s
+2026-01-23 04:31:46 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Temporary error. Retrying in 0.02s
+2026-01-23 04:31:46 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Permanent error. Retrying in 0.01s
+2026-01-23 04:31:46 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Permanent error. Retrying in 0.02s
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> maintenance
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> maintenance
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: maintenance -> inference
+2026-01-23 04:31:54 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 04:31:54 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 04:31:54 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 04:31:54 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 04:31:54 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 04:31:54 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 04:31:54 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 04:31:54 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 04:31:54 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 04:31:54 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 04:31:54 - utils.model_monitoring - [33mWARNING[0m - detect_drift:228 - Drift detected! Score: 20.83
+2026-01-23 04:31:54 - utils.model_monitoring - [32mINFO[0m - reset_counters:266 - Monitoring counters reset
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_save_model0/models/model_v1.0.0.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_load_model0/models/model_v1.0.0.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - load_model:184 - Model integrity verified for version 1.0.0
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - load_model:190 - Model version 1.0.0 loaded successfully
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_integrity_check0/models/model_v1.0.0.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_get_latest_version0/models/model_v1.0.0.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_get_latest_version0/models/model_v1.0.1.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_get_latest_version0/models/model_v1.0.2.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 3 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.2 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_list_versions0/models/model_v1.0.0.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_list_versions0/models/model_v1.0.1.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_promote_to_production0/models/model_v1.0.0.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_promote_to_production0/models/model_v1.0.1.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - promote_to_production:278 - Version 1.0.1 promoted to production
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_compare_versions0/models/model_v1.0.0.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-0/test_compare_versions0/models/model_v1.0.1.pth
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:31:54 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 04:31:54 - quadra_matrix_spi - [32mINFO[0m - __init__:101 - Symbolic Predictive Interpreter initialized with knowledge graph.
+2026-01-23 04:31:54 - quadra_matrix_spi - [32mINFO[0m - load_weights:393 - Loaded neural network weights from /workspaces/quadra-matrix-a.i./dashboard_state/oscillator_weights.pth
+2026-01-23 04:31:54 - utils.security - [33mWARNING[0m - verify_token:217 - Invalid token: Not enough segments
+2026-01-23 04:31:54 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test Key
+2026-01-23 04:31:54 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test
+2026-01-23 04:31:54 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Admin
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (7 entries)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (7 entries)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (7 entries)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (7 entries)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (7 entries)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (7 entries)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (7 entries)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (7 entries)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:31:55 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:31:55 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmp443v0put
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 2 concepts from memory
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (0 entries)
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmp443v0put
+2026-01-23 04:31:55 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpxn_6zqt9
+2026-01-23 04:31:55 - utils.validation - [33mWARNING[0m - validate_text_input:110 - Text length 15000 exceeds recommended 10000
+2026-01-23 04:41:38 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at INFO level
+2026-01-23 04:41:38 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-23 04:41:38 - app - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 04:41:38 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Temporary error. Retrying in 0.01s
+2026-01-23 04:41:38 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Temporary error. Retrying in 0.02s
+2026-01-23 04:41:38 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Permanent error. Retrying in 0.01s
+2026-01-23 04:41:38 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Permanent error. Retrying in 0.02s
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> maintenance
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> maintenance
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: maintenance -> inference
+2026-01-23 04:41:40 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 04:41:41 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 04:41:41 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 04:41:41 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 04:41:41 - utils.model_monitoring - [33mWARNING[0m - detect_drift:228 - Drift detected! Score: 20.54
+2026-01-23 04:41:41 - utils.model_monitoring - [32mINFO[0m - reset_counters:266 - Monitoring counters reset
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_save_model0/models/model_v1.0.0.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_load_model0/models/model_v1.0.0.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - load_model:184 - Model integrity verified for version 1.0.0
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - load_model:190 - Model version 1.0.0 loaded successfully
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_integrity_check0/models/model_v1.0.0.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_get_latest_version0/models/model_v1.0.0.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_get_latest_version0/models/model_v1.0.1.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_get_latest_version0/models/model_v1.0.2.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 3 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.2 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_list_versions0/models/model_v1.0.0.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_list_versions0/models/model_v1.0.1.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_promote_to_production0/models/model_v1.0.0.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_promote_to_production0/models/model_v1.0.1.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - promote_to_production:278 - Version 1.0.1 promoted to production
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_compare_versions0/models/model_v1.0.0.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-1/test_compare_versions0/models/model_v1.0.1.pth
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 04:41:41 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 04:41:41 - quadra_matrix_spi - [32mINFO[0m - __init__:101 - Symbolic Predictive Interpreter initialized with knowledge graph.
+2026-01-23 04:41:41 - quadra_matrix_spi - [32mINFO[0m - load_weights:393 - Loaded neural network weights from /workspaces/quadra-matrix-a.i./dashboard_state/oscillator_weights.pth
+2026-01-23 04:41:41 - utils.security - [33mWARNING[0m - verify_token:217 - Invalid token: Not enough segments
+2026-01-23 04:41:41 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test Key
+2026-01-23 04:41:41 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test
+2026-01-23 04:41:41 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Admin
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (7 entries)
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (8 entries)
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (9 entries)
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (10 entries)
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (11 entries)
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (12 entries)
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (13 entries)
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 1 concepts from memory
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (14 entries)
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:259 - Restored IFT field state: (10, 16, 16)
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:441 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 04:41:41 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpantzzd5x
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 2 concepts from memory
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (0 entries)
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpantzzd5x
+2026-01-23 04:41:41 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpokqtdv32
+2026-01-23 04:41:41 - utils.validation - [33mWARNING[0m - validate_text_input:110 - Text length 15000 exceeds recommended 10000
+2026-01-23 05:02:30 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at INFO level
+2026-01-23 05:02:30 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-23 05:02:30 - app - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:02:30 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Temporary error. Retrying in 0.01s
+2026-01-23 05:02:30 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Temporary error. Retrying in 0.02s
+2026-01-23 05:02:30 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Permanent error. Retrying in 0.01s
+2026-01-23 05:02:30 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Permanent error. Retrying in 0.02s
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> maintenance
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> maintenance
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: maintenance -> inference
+2026-01-23 05:02:32 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 05:02:32 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 05:02:32 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 05:02:32 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.49
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.49
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.49
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.49
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.49
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.49
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:02:32 - utils.model_monitoring - [33mWARNING[0m - detect_drift:228 - Drift detected! Score: 21.26
+2026-01-23 05:02:32 - utils.model_monitoring - [32mINFO[0m - reset_counters:266 - Monitoring counters reset
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_save_model0/models/model_v1.0.0.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_load_model0/models/model_v1.0.0.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - load_model:184 - Model integrity verified for version 1.0.0
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - load_model:190 - Model version 1.0.0 loaded successfully
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_integrity_check0/models/model_v1.0.0.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_get_latest_version0/models/model_v1.0.0.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_get_latest_version0/models/model_v1.0.1.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_get_latest_version0/models/model_v1.0.2.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 3 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.2 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_list_versions0/models/model_v1.0.0.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_list_versions0/models/model_v1.0.1.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_promote_to_production0/models/model_v1.0.0.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_promote_to_production0/models/model_v1.0.1.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - promote_to_production:278 - Version 1.0.1 promoted to production
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_compare_versions0/models/model_v1.0.0.pth
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:02:32 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:02:33 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-2/test_compare_versions0/models/model_v1.0.1.pth
+2026-01-23 05:02:33 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:02:33 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:02:33 - quadra_matrix_spi - [32mINFO[0m - __init__:101 - Symbolic Predictive Interpreter initialized with knowledge graph.
+2026-01-23 05:02:33 - quadra_matrix_spi - [32mINFO[0m - load_weights:393 - Loaded neural network weights from /workspaces/quadra-matrix-a.i./dashboard_state/oscillator_weights.pth
+2026-01-23 05:02:33 - utils.security - [33mWARNING[0m - verify_token:217 - Invalid token: Not enough segments
+2026-01-23 05:02:33 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test Key
+2026-01-23 05:02:33 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test
+2026-01-23 05:02:33 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Admin
+2026-01-23 05:02:33 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:02:33 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 18 concepts from memory
+2026-01-23 05:02:33 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (40 entries)
+2026-01-23 05:02:33 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:02:33 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:02:33 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:02:33 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:02:33 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:02:33 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 19 concepts from memory
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (41 entries)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 20 concepts from memory
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (44 entries)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 23 concepts from memory
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (46 entries)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 25 concepts from memory
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (51 entries)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 27 concepts from memory
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (52 entries)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 32 concepts from memory
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (54 entries)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 34 concepts from memory
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (55 entries)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:02:36 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:02:36 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpvdau_f66
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 2 concepts from memory
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (0 entries)
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpvdau_f66
+2026-01-23 05:02:36 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmp6exvnv8u
+2026-01-23 05:02:36 - utils.validation - [33mWARNING[0m - validate_text_input:110 - Text length 15000 exceeds recommended 10000
+2026-01-23 05:06:53 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at DEBUG level
+2026-01-23 05:06:53 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-23 05:06:53 - app - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-23 05:06:55 - quadra_matrix_spi - [32mINFO[0m - __init__:101 - Symbolic Predictive Interpreter initialized with knowledge graph.
+2026-01-23 05:06:55 - quadra_matrix_spi - [32mINFO[0m - load_weights:393 - Loaded neural network weights from /workspaces/quadra-matrix-a.i./dashboard_state/oscillator_weights.pth
+2026-01-23 05:09:41 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at INFO level
+2026-01-23 05:09:41 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-23 05:09:41 - app - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:09:41 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Temporary error. Retrying in 0.01s
+2026-01-23 05:09:41 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Temporary error. Retrying in 0.02s
+2026-01-23 05:09:41 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Permanent error. Retrying in 0.01s
+2026-01-23 05:09:41 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Permanent error. Retrying in 0.02s
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> maintenance
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> maintenance
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: maintenance -> inference
+2026-01-23 05:09:43 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 05:09:43 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 05:09:44 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 05:09:44 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:09:44 - utils.model_monitoring - [33mWARNING[0m - detect_drift:228 - Drift detected! Score: 22.22
+2026-01-23 05:09:44 - utils.model_monitoring - [32mINFO[0m - reset_counters:266 - Monitoring counters reset
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_save_model0/models/model_v1.0.0.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_load_model0/models/model_v1.0.0.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - load_model:184 - Model integrity verified for version 1.0.0
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - load_model:190 - Model version 1.0.0 loaded successfully
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_integrity_check0/models/model_v1.0.0.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_get_latest_version0/models/model_v1.0.0.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_get_latest_version0/models/model_v1.0.1.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_get_latest_version0/models/model_v1.0.2.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 3 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.2 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_list_versions0/models/model_v1.0.0.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_list_versions0/models/model_v1.0.1.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_promote_to_production0/models/model_v1.0.0.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_promote_to_production0/models/model_v1.0.1.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - promote_to_production:278 - Version 1.0.1 promoted to production
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_compare_versions0/models/model_v1.0.0.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-5/test_compare_versions0/models/model_v1.0.1.pth
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:09:44 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:09:44 - utils.security - [33mWARNING[0m - verify_token:217 - Invalid token: Not enough segments
+2026-01-23 05:09:44 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test Key
+2026-01-23 05:09:44 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test
+2026-01-23 05:09:44 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Admin
+2026-01-23 05:09:44 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:09:44 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 34 concepts from memory
+2026-01-23 05:09:44 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (60 entries)
+2026-01-23 05:09:44 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:09:44 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:09:44 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:09:44 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:09:44 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:09:44 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 35 concepts from memory
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (61 entries)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 36 concepts from memory
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (64 entries)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 39 concepts from memory
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (66 entries)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 41 concepts from memory
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (71 entries)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 43 concepts from memory
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (72 entries)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 48 concepts from memory
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (74 entries)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 50 concepts from memory
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (75 entries)
+2026-01-23 05:09:47 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:09:47 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:09:47 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:09:48 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:09:48 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:09:48 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpejgovf8n
+2026-01-23 05:09:48 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:09:48 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 2 concepts from memory
+2026-01-23 05:09:48 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (0 entries)
+2026-01-23 05:09:48 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpejgovf8n
+2026-01-23 05:09:48 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpd66egduw
+2026-01-23 05:09:48 - utils.validation - [33mWARNING[0m - validate_text_input:110 - Text length 15000 exceeds recommended 10000
+2026-01-23 05:14:43 - utils.logging_config - [32mINFO[0m - setup_logging:125 - Logging initialized at INFO level
+2026-01-23 05:14:43 - utils.logging_config - [32mINFO[0m - setup_logging:127 - Log files in: /workspaces/quadra-matrix-a.i./logs
+2026-01-23 05:14:43 - app - [32mINFO[0m - <module>:174 - ML-specific components initialized
+2026-01-23 05:14:43 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:14:44 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Temporary error. Retrying in 0.01s
+2026-01-23 05:14:44 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Temporary error. Retrying in 0.02s
+2026-01-23 05:14:44 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 1/3 failed for func: Permanent error. Retrying in 0.01s
+2026-01-23 05:14:44 - utils.error_handling - [33mWARNING[0m - wrapper:228 - Attempt 2/3 failed for func: Permanent error. Retrying in 0.02s
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> maintenance
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_inference_mode:86 - Already in inference mode
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - __init__:34 - Model mode initialized: inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_training_mode:99 - Entering training mode...
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: inference -> training
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_training_mode:101 - Training mode ready
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:109 - Entering maintenance mode...
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: training -> maintenance
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_maintenance_mode:111 - Maintenance mode active
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_inference_mode:89 - Entering inference mode...
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - set_mode:52 - Model mode changed: maintenance -> inference
+2026-01-23 05:14:46 - utils.model_modes - [32mINFO[0m - enter_inference_mode:91 - Inference mode ready
+2026-01-23 05:14:46 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 05:14:46 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 05:14:46 - utils.model_monitoring - [32mINFO[0m - set_baseline:187 - Baseline set with 50 samples
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - _check_alerts:163 - Low confidence detected: 0.50
+2026-01-23 05:14:46 - utils.model_monitoring - [33mWARNING[0m - detect_drift:228 - Drift detected! Score: 23.83
+2026-01-23 05:14:46 - utils.model_monitoring - [32mINFO[0m - reset_counters:266 - Monitoring counters reset
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_save_model0/models/model_v1.0.0.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_load_model0/models/model_v1.0.0.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - load_model:184 - Model integrity verified for version 1.0.0
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - load_model:190 - Model version 1.0.0 loaded successfully
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_integrity_check0/models/model_v1.0.0.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_get_latest_version0/models/model_v1.0.0.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_get_latest_version0/models/model_v1.0.1.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_get_latest_version0/models/model_v1.0.2.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 3 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.2 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_list_versions0/models/model_v1.0.0.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_list_versions0/models/model_v1.0.1.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_promote_to_production0/models/model_v1.0.0.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_promote_to_production0/models/model_v1.0.1.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - promote_to_production:278 - Version 1.0.1 promoted to production
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_compare_versions0/models/model_v1.0.0.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 1 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.0 registered
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:116 - Model saved: /tmp/pytest-of-codespace/pytest-6/test_compare_versions0/models/model_v1.0.1.pth
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - _save_registry:72 - Registry saved with 2 versions
+2026-01-23 05:14:46 - utils.model_versioning - [32mINFO[0m - save_model:143 - Model version 1.0.1 registered
+2026-01-23 05:14:46 - utils.security - [33mWARNING[0m - verify_token:217 - Invalid token: Not enough segments
+2026-01-23 05:14:46 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test Key
+2026-01-23 05:14:46 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Test
+2026-01-23 05:14:46 - utils.security - [32mINFO[0m - register_api_key:240 - API key registered: Admin
+2026-01-23 05:14:46 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:14:46 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 50 concepts from memory
+2026-01-23 05:14:46 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (80 entries)
+2026-01-23 05:14:46 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:14:46 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:14:46 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:14:46 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:14:46 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:14:46 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 51 concepts from memory
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (81 entries)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 52 concepts from memory
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (84 entries)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 55 concepts from memory
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (86 entries)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 57 concepts from memory
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (91 entries)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 59 concepts from memory
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (92 entries)
+2026-01-23 05:14:49 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:14:49 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:14:49 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 64 concepts from memory
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (94 entries)
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:14:50 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:14:50 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:14:50 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:14:50 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:14:50 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 66 concepts from memory
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (95 entries)
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at memory_store
+2026-01-23 05:14:50 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:257 - Using field shape from saved state: (16, 16)
+2026-01-23 05:14:50 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:268 - Restored IFT field state: (10, 16, 16)
+2026-01-23 05:14:50 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:14:50 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:258 - GovernanceService initialized
+2026-01-23 05:14:50 - quadra.core.symbolic.interpreter - [32mINFO[0m - __init__:450 - StatefulSymbolicPredictiveInterpreter initialized (vspi-symbolic-0.2.0, IFT=True)
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - clear:304 - Memory cleared
+2026-01-23 05:14:50 - quadra.core.governance.policy_adapter - [32mINFO[0m - __init__:166 - PolicyEngine initialized with 3 rules
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpjs99j4bb
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:106 - Loaded neural state from disk
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:115 - Loaded 2 concepts from memory
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - _load_from_disk:125 - Loaded neuroplasticity trajectory (0 entries)
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpjs99j4bb
+2026-01-23 05:14:50 - quadra.state.memory_store - [32mINFO[0m - __init__:86 - MemoryStore initialized at /tmp/tmpsrtkrsft
+2026-01-23 05:14:50 - utils.validation - [33mWARNING[0m - validate_text_input:110 - Text length 15000 exceeds recommended 10000

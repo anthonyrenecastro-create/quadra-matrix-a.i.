@@ -1,0 +1,810 @@
+{
+  "concept_history": [
+    "trial",
+    "quantum",
+    "phase",
+    "coherence",
+    "mechanics",
+    "wave",
+    "function",
+    "collapse",
+    "one",
+    "web",
+    "cryptography",
+    "feat",
+    "injury",
+    "violence",
+    "physics",
+    "establish",
+    "quantum",
+    "mechanics",
+    "phase",
+    "coherence",
+    "wave",
+    "function",
+    "collapse",
+    "one",
+    "trial",
+    "web",
+    "cryptography",
+    "feat",
+    "injury",
+    "violence",
+    "physics",
+    "establish",
+    "quantum",
+    "mechanics",
+    "phase",
+    "coherence",
+    "wave",
+    "function",
+    "collapse",
+    "one",
+    "trial",
+    "web",
+    "cryptography",
+    "feat",
+    "injury",
+    "violence",
+    "physics",
+    "establish",
+    "quantum",
+    "mechanics",
+    "phase",
+    "coherence",
+    "wave",
+    "function",
+    "collapse",
+    "one",
+    "trial",
+    "web",
+    "cryptography",
+    "feat",
+    "injury",
+    "violence",
+    "physics",
+    "establish",
+    "quantum",
+    "mechanics"
+  ],
+  "reasoning_traces": [
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T03:42:21.878252"
+    },
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T03:42:21.889960"
+    },
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T04:16:45.368515"
+    },
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T04:16:45.380216"
+    },
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T04:25:40.231574"
+    },
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T04:25:40.250854"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "phase"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:01:07.502363"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "phase"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:05.194335"
+    },
+    {
+      "concepts": [
+        "quantum"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:02:05.232298"
+    },
+    {
+      "concepts": [
+        "phase"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:05.257677"
+    },
+    {
+      "concepts": [
+        "coherence"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:05.286903"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "mechanics"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:05.321523"
+    },
+    {
+      "concepts": [
+        "wave",
+        "function",
+        "collapse"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:02:05.355793"
+    },
+    {
+      "concepts": [
+        "one"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:02:05.422419"
+    },
+    {
+      "concepts": [
+        "concept0"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:05.448650"
+    },
+    {
+      "concepts": [
+        "concept1"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:05.474545"
+    },
+    {
+      "concepts": [
+        "concept2"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 4,
+      "timestamp": "2026-01-23T05:02:05.507537"
+    },
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:02:05.535219"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "entanglement",
+        "coding"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:05.579596"
+    },
+    {
+      "concepts": [
+        "exploit",
+        "harm",
+        "violence"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:05.634144"
+    },
+    {
+      "concepts": [
+        "physics",
+        "established"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:02:05.679904"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "mechanics"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:05.722959"
+    },
+    {
+      "concepts": [
+        "topic0"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:02:05.760597"
+    },
+    {
+      "concepts": [
+        "topic1"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:05.788411"
+    },
+    {
+      "concepts": [
+        "topic2"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:05.817369"
+    },
+    {
+      "concepts": [
+        "topic3"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 4,
+      "timestamp": "2026-01-23T05:02:05.845048"
+    },
+    {
+      "concepts": [
+        "topic4"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:02:05.875996"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "phase"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:36.105197"
+    },
+    {
+      "concepts": [
+        "quantum"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:02:36.145947"
+    },
+    {
+      "concepts": [
+        "phase"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:36.175059"
+    },
+    {
+      "concepts": [
+        "coherence"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:36.209206"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "mechanics"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:36.251421"
+    },
+    {
+      "concepts": [
+        "wave",
+        "function",
+        "collapse"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:02:36.299907"
+    },
+    {
+      "concepts": [
+        "one"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:02:36.353539"
+    },
+    {
+      "concepts": [
+        "concept0"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:36.382865"
+    },
+    {
+      "concepts": [
+        "concept1"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:36.419566"
+    },
+    {
+      "concepts": [
+        "concept2"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 4,
+      "timestamp": "2026-01-23T05:02:36.453270"
+    },
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:02:36.491100"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "entanglement",
+        "coding"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:36.548370"
+    },
+    {
+      "concepts": [
+        "exploit",
+        "harm",
+        "violence"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:36.618236"
+    },
+    {
+      "concepts": [
+        "physics",
+        "established"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:02:36.665782"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "mechanics"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:36.720011"
+    },
+    {
+      "concepts": [
+        "topic0"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:02:36.760884"
+    },
+    {
+      "concepts": [
+        "topic1"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:02:36.791783"
+    },
+    {
+      "concepts": [
+        "topic2"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:02:36.828573"
+    },
+    {
+      "concepts": [
+        "topic3"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 4,
+      "timestamp": "2026-01-23T05:02:36.862821"
+    },
+    {
+      "concepts": [
+        "topic4"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:02:36.902824"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "phase"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:09:47.063306"
+    },
+    {
+      "concepts": [
+        "quantum"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:09:47.111213"
+    },
+    {
+      "concepts": [
+        "phase"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:09:47.145367"
+    },
+    {
+      "concepts": [
+        "coherence"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:09:47.188582"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "mechanics"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:09:47.237241"
+    },
+    {
+      "concepts": [
+        "wave",
+        "function",
+        "collapse"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:09:47.338921"
+    },
+    {
+      "concepts": [
+        "one"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:09:47.391791"
+    },
+    {
+      "concepts": [
+        "concept0"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:09:47.426148"
+    },
+    {
+      "concepts": [
+        "concept1"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:09:47.459249"
+    },
+    {
+      "concepts": [
+        "concept2"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 4,
+      "timestamp": "2026-01-23T05:09:47.504324"
+    },
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:09:47.545266"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "entanglement",
+        "coding"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:09:47.606324"
+    },
+    {
+      "concepts": [
+        "exploit",
+        "harm",
+        "violence"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:09:47.676600"
+    },
+    {
+      "concepts": [
+        "physics",
+        "established"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:09:47.729387"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "mechanics"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:09:47.789370"
+    },
+    {
+      "concepts": [
+        "topic0"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:09:47.833637"
+    },
+    {
+      "concepts": [
+        "topic1"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:09:47.872376"
+    },
+    {
+      "concepts": [
+        "topic2"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:09:47.912435"
+    },
+    {
+      "concepts": [
+        "topic3"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 4,
+      "timestamp": "2026-01-23T05:09:47.949658"
+    },
+    {
+      "concepts": [
+        "topic4"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:09:47.996141"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "phase"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:14:49.290568"
+    },
+    {
+      "concepts": [
+        "quantum"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:14:49.338970"
+    },
+    {
+      "concepts": [
+        "phase"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:14:49.375857"
+    },
+    {
+      "concepts": [
+        "coherence"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:14:49.421563"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "mechanics"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:14:49.471632"
+    },
+    {
+      "concepts": [
+        "wave",
+        "function",
+        "collapse"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:14:49.531737"
+    },
+    {
+      "concepts": [
+        "one"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:14:49.589124"
+    },
+    {
+      "concepts": [
+        "concept0"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:14:49.629692"
+    },
+    {
+      "concepts": [
+        "concept1"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:14:49.668262"
+    },
+    {
+      "concepts": [
+        "concept2"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 4,
+      "timestamp": "2026-01-23T05:14:49.726969"
+    },
+    {
+      "concepts": [
+        "test"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:14:49.774112"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "entanglement",
+        "coding"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:14:49.853060"
+    },
+    {
+      "concepts": [
+        "exploit",
+        "harm",
+        "violence"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:14:49.948827"
+    },
+    {
+      "concepts": [
+        "physics",
+        "established"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:14:50.010734"
+    },
+    {
+      "concepts": [
+        "quantum",
+        "mechanics"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:14:50.098829"
+    },
+    {
+      "concepts": [
+        "topic0"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 1,
+      "timestamp": "2026-01-23T05:14:50.148756"
+    },
+    {
+      "concepts": [
+        "topic1"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 2,
+      "timestamp": "2026-01-23T05:14:50.188884"
+    },
+    {
+      "concepts": [
+        "topic2"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 3,
+      "timestamp": "2026-01-23T05:14:50.230409"
+    },
+    {
+      "concepts": [
+        "topic3"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 4,
+      "timestamp": "2026-01-23T05:14:50.269786"
+    },
+    {
+      "concepts": [
+        "topic4"
+      ],
+      "neural_magnitude": 0.0,
+      "graph_size": 5,
+      "timestamp": "2026-01-23T05:14:50.317696"
+    }
+  ],
+  "timestamp": "2026-01-23T05:14:50.318009"
+}

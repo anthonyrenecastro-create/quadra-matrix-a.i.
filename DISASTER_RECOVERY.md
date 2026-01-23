@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document provides comprehensive disaster recovery (DR) procedures for Quadra Matrix A.I. Follow these procedures to recover from various failure scenarios.
+This document provides comprehensive disaster recovery (DR) procedures for CognitionSim Follow these procedures to recover from various failure scenarios.
 
 ## 🆘 Emergency Contacts
 
@@ -80,12 +80,12 @@ sqlite3 db_backup.db "PRAGMA integrity_check;" | grep "ok" && echo "✅ Database
 1. **Check service status**
    ```bash
    # Docker
-   docker ps -a | grep quadra-matrix
-   docker logs quadra-matrix-ai --tail 100
+   docker ps -a | grep cognitionsim
+   docker logs cognitionsim-ai --tail 100
    
    # Kubernetes
-   kubectl get pods -n quadra-matrix
-   kubectl logs <pod-name> -n quadra-matrix --tail=100
+   kubectl get pods -n cognitionsim
+   kubectl logs <pod-name> -n cognitionsim --tail=100
    ```
 
 2. **Restart service**
@@ -94,7 +94,7 @@ sqlite3 db_backup.db "PRAGMA integrity_check;" | grep "ok" && echo "✅ Database
    docker-compose restart
    
    # Kubernetes
-   kubectl rollout restart deployment/quadra-matrix-ai -n quadra-matrix
+   kubectl rollout restart deployment/cognitionsim-ai -n cognitionsim
    ```
 
 3. **Verify recovery**
@@ -126,7 +126,7 @@ sqlite3 db_backup.db "PRAGMA integrity_check;" | grep "ok" && echo "✅ Database
    ```bash
    docker-compose down
    # or
-   kubectl scale deployment/quadra-matrix-ai --replicas=0 -n quadra-matrix
+   kubectl scale deployment/cognitionsim-ai --replicas=0 -n cognitionsim
    ```
 
 2. **Verify database corruption**
@@ -150,7 +150,7 @@ sqlite3 db_backup.db "PRAGMA integrity_check;" | grep "ok" && echo "✅ Database
    ```bash
    docker-compose up -d
    # or
-   kubectl scale deployment/quadra-matrix-ai --replicas=1 -n quadra-matrix
+   kubectl scale deployment/cognitionsim-ai --replicas=1 -n cognitionsim
    ```
 
 5. **Verify recovery**
@@ -218,7 +218,7 @@ sqlite3 db_backup.db "PRAGMA integrity_check;" | grep "ok" && echo "✅ Database
 2. **Restore application code**
    ```bash
    git clone https://github.com/anthonycastro-spaceace01/Quadra-M777.git
-   cd Quadra-M777/Quadra-Matrix-A.I.-main
+   cd Quadra-M777/CognitionSim-main
    ```
 
 3. **Restore configuration**
@@ -248,7 +248,7 @@ sqlite3 db_backup.db "PRAGMA integrity_check;" | grep "ok" && echo "✅ Database
    docker-compose up -d
    
    # Kubernetes
-   kubectl apply -f k8s/deployment.yaml -n quadra-matrix
+   kubectl apply -f k8s/deployment.yaml -n cognitionsim
    ```
 
 6. **Verify all systems**
@@ -375,7 +375,7 @@ Set up alerts for:
 
 ### Monitoring Dashboard
 
-Access at: `http://your-monitoring-url/quadra-matrix`
+Access at: `http://your-monitoring-url/cognitionsim`
 
 Key metrics to monitor:
 - Service uptime

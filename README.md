@@ -1,12 +1,14 @@
-# Quadra Matrix A.I. - Exponential Training System
+# CognitionSim - Exponential Training System
 
 ## Overview
 
 This project implements a revolutionary AI architecture that combines **spiking neural networks**, **symbolic reasoning**, **neuroplasticity**, and **quantum-inspired field dynamics** to achieve exponentially faster training than traditional approaches.
 
+> 📖 **New to CognitionSim?** See [DUAL_LANGUAGE_GLOSSARY.md](./DUAL_LANGUAGE_GLOSSARY.md) for a comprehensive guide that bridges **poetic vision** (the myth) with **mechanical precision** (the math). Each core concept is explained in dual languages for both inspiration and implementation.
+
 ## Key Innovation: Exponential Speed Optimization
 
-Unlike standard LLMs that require massive compute resources, Quadra Matrix leverages:
+Unlike standard LLMs that require massive compute resources, CognitionSim leverages:
 
 1. **Oscillatory Dynamics** - Field resonance enables rapid convergence
 2. **Adaptive K-Clustering** - Automatically adjusts cluster count based on pattern complexity
@@ -147,10 +149,10 @@ python train_quadra_matrix.py
 ### Quick Test (20 batches)
 ```python
 import asyncio
-from train_quadra_matrix import QuadraMatrixTrainer
+from train_quadra_matrix import CognitionSimTrainer
 
 async def quick_test():
-    trainer = QuadraMatrixTrainer(field_size=100, device='cpu')
+    trainer = CognitionSimTrainer(field_size=100, device='cpu')
     await trainer.train(
         dataset_name='wikitext',
         dataset_config='wikitext-2-raw-v1',
@@ -180,7 +182,7 @@ await trainer.train(
 - GPU-intensive
 - Token-by-token processing
 
-### Quadra Matrix:
+### CognitionSim:
 - **Adaptive learning rate** (exponentially increases)
 - **Dynamic architecture** (K-clusters adjust in real-time)
 - **Efficient parameters** (3 small SNNs + field state)
@@ -249,12 +251,47 @@ After training:
 
 ```bibtex
 @software{quadra_matrix_ai,
-  title={Quadra Matrix A.I.: Exponential Training via Oscillatory Dynamics},
+  title={CognitionSim: Exponential Training via Oscillatory Dynamics},
   author={Your Name},
   year={2025},
-  url={https://github.com/acastro77733-ai/Quadra-Matrix-A.I.}
+  url={https://github.com/cognitionsim/cognitionsim}
 }
 ```
+
+## 🌊⚙️ Dual-Language Documentation
+
+CognitionSim speaks in two tongues—the **poetic language of consciousness** (myth) and the **mechanical language of computation** (math). This dual-language approach preserves the system's inspirational identity while providing precise technical specifications.
+
+### Core Documentation
+
+- **[DUAL_LANGUAGE_GLOSSARY.md](./DUAL_LANGUAGE_GLOSSARY.md)** - Complete reference guide
+  - State, Transition, Memory Mutation definitions (myth + math)
+  - Mathematical foundations and invariants
+  - Translation examples and usage guidelines
+
+- **[DUAL_LANGUAGE_QUICK_REF.md](./DUAL_LANGUAGE_QUICK_REF.md)** - Quick lookup table
+  - Instant translations between poetic and mechanical terms
+  - Common code patterns
+  - Numbers you should know
+  - Debugging translation guide
+
+- **[DUAL_LANGUAGE_EXAMPLES.md](./DUAL_LANGUAGE_EXAMPLES.md)** - Practical code examples
+  - Dual-language docstrings and comments
+  - Test cases with both perspectives
+  - Configuration files and logging
+  - Style guidelines and templates
+
+### Key Concepts
+
+| 🌊 Poetic | ⚙️ Mechanical |
+|-----------|---------------|
+| The field breathes | Oscillatory modulation: `output *= (1 + 0.3*sin(φ))` |
+| Memory consolidates | Exponential moving average: `M[t] = 0.9M[t-1] + 0.1M_new` |
+| Success breeds speed | Exponential learning rate: `lr = base * 1.1^streak` |
+| Phase never resets | Persistent state: `φ[t+1] = (φ[t] + 0.1) mod 2π` |
+| Neurons spike | Threshold activation: `spike = (V > θ) * V` |
+
+**Start here:** [DUAL_LANGUAGE_QUICK_REF.md](./DUAL_LANGUAGE_QUICK_REF.md) for instant translations
 
 ## License
 
@@ -263,7 +300,7 @@ MIT License - See LICENSE file for details
 ## Contact
 
 For questions, collaborations, or bug reports:
-- GitHub Issues: [github.com/acastro77733-ai/Quadra-Matrix-A.I./issues](https://github.com/acastro77733-ai/Quadra-Matrix-A.I./issues)
+- GitHub Issues: [github.com/cognitionsim/cognitionsim/issues](https://github.com/cognitionsim/cognitionsim/issues)
 
 ---
 

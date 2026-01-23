@@ -1,4 +1,4 @@
-# Quadra Matrix A.I. - Production Dependencies
+# CognitionSim - Production Dependencies
 # Simplified for compatibility
 
 # Web Framework

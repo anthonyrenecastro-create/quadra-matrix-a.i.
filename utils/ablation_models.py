@@ -1,6 +1,6 @@
 """
 Ablation Study Models
-Baseline models for comparing against the full Quadra-Matrix system.
+Baseline models for comparing against the full CognitionSim system.
 """
 
 import torch

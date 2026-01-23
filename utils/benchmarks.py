@@ -1,5 +1,5 @@
 """
-Performance Benchmarks for Quadra Matrix A.I.
+Performance Benchmarks for CognitionSim
 Measure and track system performance
 """
 import time
@@ -119,7 +119,7 @@ class PerformanceBenchmark:
 class BenchmarkSuite:
     """Collection of benchmarks"""
     
-    def __init__(self, name: str = 'Quadra Matrix Performance'):
+    def __init__(self, name: str = 'CognitionSim Performance'):
         self.name = name
         self.benchmarks: Dict[str, PerformanceBenchmark] = {}
         self.start_time = datetime.utcnow()

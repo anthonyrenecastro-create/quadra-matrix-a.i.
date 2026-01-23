@@ -1,5 +1,5 @@
 """
-Test suite for Quadra Matrix core functionality
+Test suite for CognitionSim core functionality
 """
 import pytest
 import torch
@@ -7,8 +7,8 @@ import numpy as np
 from unittest.mock import Mock, patch, MagicMock
 
 
-class TestQuadraMatrixComponents:
-    """Test core Quadra Matrix components"""
+class TestCognitionSimComponents:
+    """Test core CognitionSim components"""
     
     def test_core_field_initialization(self):
         """Test CoreField initialization"""
@@ -166,14 +166,20 @@ class TestErrorHandling:
         # This would test actual error handling in the app
         pass
     
-    def test_invalid_state_load(self):
+    def test_invalid_state_load(self, tmp_path, monkeypatch):
         """Test loading invalid state"""
         from app import SystemState
+        import app
+        
+        # Patch the paths to use tmp_path
+        monkeypatch.setattr(app, 'METRICS_PATH', str(tmp_path / 'metrics.pkl'))
+        monkeypatch.setattr(app, 'SYSTEM_STATE_PATH', str(tmp_path / 'system_state.pkl'))
+        monkeypatch.setattr(app, 'OSCILLATOR_PATH', str(tmp_path / 'oscillator.pth'))
         
         state = SystemState()
         # Should return False when no state exists
         result = state.load_state()
-        assert result is False
+        assert result == False
 
 
 @pytest.mark.parametrize("field_size", [10, 50, 100, 200])

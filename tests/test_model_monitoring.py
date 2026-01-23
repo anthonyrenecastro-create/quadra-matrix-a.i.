@@ -119,7 +119,7 @@ def test_drift_detection_no_drift(monitor):
         )
     
     result = monitor.detect_drift()
-    assert result['drift_detected'] is False
+    assert result['drift_detected'] == False
 
 
 def test_drift_detection_with_drift(monitor):
@@ -143,7 +143,7 @@ def test_drift_detection_with_drift(monitor):
         )
     
     result = monitor.detect_drift()
-    assert result['drift_detected'] is True
+    assert result['drift_detected'] == True
     assert result['drift_score'] > result['threshold']
 
 
@@ -163,9 +163,9 @@ def test_health_checker(tmp_path):
     
     health = checker.check_health()
     
-    assert health['healthy'] is True
-    assert health['model_dir_exists'] is True
-    assert health['required_files']['model.pth'] is True
+    assert health['healthy'] == True
+    assert health['model_dir_exists'] == True
+    assert health['required_files']['model.pth'] == True
 
 
 def test_health_checker_missing_files(tmp_path):

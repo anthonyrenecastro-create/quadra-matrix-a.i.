@@ -311,7 +311,7 @@ pip install scipy
 ## Credits
 
 **Architecture Design:** Neural Command Center Specification
-**Implementation:** Quadra Matrix Cognition Framework
+**Implementation:** CognitionSim Cognition Framework
 **Philosophy:** Post-conversational AI paradigm
 
 ---

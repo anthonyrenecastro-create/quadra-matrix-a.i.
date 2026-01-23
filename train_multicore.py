@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quadra Matrix Multi-Core Training
+CognitionSim Multi-Core Training
 Parallel training with GPU acceleration and multi-threading support.
 
 Features:
@@ -334,7 +334,7 @@ def benchmark_configurations():
 if __name__ == "__main__":
     import argparse
     
-    parser = argparse.ArgumentParser(description="Quadra Matrix Multi-Core Training")
+    parser = argparse.ArgumentParser(description="CognitionSim Multi-Core Training")
     parser.add_argument('--mode', choices=['single', 'multi-gpu', 'multi-cpu', 'benchmark'],
                        default='single', help='Training mode')
     parser.add_argument('--epochs', type=int, default=10, help='Number of epochs')

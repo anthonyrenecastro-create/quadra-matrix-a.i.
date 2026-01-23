@@ -4,12 +4,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: quadra-matrix-production
+  name: cognitionsim-production
   labels:
-    app: quadra-matrix
+    app: cognitionsim
 spec:
   selector:
-    app: quadra-matrix
+    app: cognitionsim
     deployment: blue  # Switch between 'blue' and 'green'
   ports:
     - protocol: TCP
@@ -22,26 +22,26 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quadra-matrix-blue
+  name: cognitionsim-blue
   labels:
-    app: quadra-matrix
+    app: cognitionsim
     deployment: blue
 spec:
   replicas: 10
   selector:
     matchLabels:
-      app: quadra-matrix
+      app: cognitionsim
       deployment: blue
   template:
     metadata:
       labels:
-        app: quadra-matrix
+        app: cognitionsim
         deployment: blue
         version: "1.0.0"
     spec:
       containers:
-      - name: quadra-matrix
-        image: quadra-matrix:1.0.0
+      - name: cognitionsim
+        image: cognitionsim:1.0.0
         ports:
         - containerPort: 5000
         env:
@@ -76,26 +76,26 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quadra-matrix-green
+  name: cognitionsim-green
   labels:
-    app: quadra-matrix
+    app: cognitionsim
     deployment: green
 spec:
   replicas: 10
   selector:
     matchLabels:
-      app: quadra-matrix
+      app: cognitionsim
       deployment: green
   template:
     metadata:
       labels:
-        app: quadra-matrix
+        app: cognitionsim
         deployment: green
         version: "1.1.0"
     spec:
       containers:
-      - name: quadra-matrix
-        image: quadra-matrix:1.1.0  # New version
+      - name: cognitionsim
+        image: cognitionsim:1.1.0  # New version
         ports:
         - containerPort: 5000
         env:
@@ -130,13 +130,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quadra-matrix-blue
+  name: cognitionsim-blue
   labels:
-    app: quadra-matrix
+    app: cognitionsim
     deployment: blue
 spec:
   selector:
-    app: quadra-matrix
+    app: cognitionsim
     deployment: blue
   ports:
     - protocol: TCP
@@ -149,13 +149,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quadra-matrix-green
+  name: cognitionsim-green
   labels:
-    app: quadra-matrix
+    app: cognitionsim
     deployment: green
 spec:
   selector:
-    app: quadra-matrix
+    app: cognitionsim
     deployment: green
   ports:
     - protocol: TCP
@@ -168,18 +168,18 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: quadra-matrix-ingress
+  name: cognitionsim-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: quadra-matrix.example.com
+  - host: cognitionsim.example.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: quadra-matrix-production
+            name: cognitionsim-production
             port:
               number: 80

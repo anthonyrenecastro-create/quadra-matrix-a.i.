@@ -10,35 +10,35 @@ from flask import jsonify
 logger = logging.getLogger(__name__)
 
 
-class QuadraMatrixError(Exception):
-    """Base exception for Quadra Matrix errors"""
+class CognitionSimError(Exception):
+    """Base exception for CognitionSim errors"""
     def __init__(self, message: str, details: Optional[dict] = None):
         self.message = message
         self.details = details or {}
         super().__init__(self.message)
 
 
-class InitializationError(QuadraMatrixError):
+class InitializationError(CognitionSimError):
     """Raised when system initialization fails"""
     pass
 
 
-class TrainingError(QuadraMatrixError):
+class TrainingError(CognitionSimError):
     """Raised when training fails"""
     pass
 
 
-class StateError(QuadraMatrixError):
+class StateError(CognitionSimError):
     """Raised when state operations fail"""
     pass
 
 
-class ConfigurationError(QuadraMatrixError):
+class ConfigurationError(CognitionSimError):
     """Raised when configuration is invalid"""
     pass
 
 
-class ValidationError(QuadraMatrixError):
+class ValidationError(CognitionSimError):
     """Raised when validation fails"""
     pass
 
@@ -60,8 +60,8 @@ def handle_errors(func: Callable) -> Callable:
         except ValidationError as e:
             logger.error(f"Validation error in {func.__name__}: {e.message}")
             raise
-        except QuadraMatrixError as e:
-            logger.error(f"Quadra Matrix error in {func.__name__}: {e.message}")
+        except CognitionSimError as e:
+            logger.error(f"CognitionSim error in {func.__name__}: {e.message}")
             if e.details:
                 logger.error(f"Details: {e.details}")
             raise
@@ -70,7 +70,7 @@ def handle_errors(func: Callable) -> Callable:
                 f"Unexpected error in {func.__name__}: {str(e)}\n"
                 f"{traceback.format_exc()}"
             )
-            raise QuadraMatrixError(
+            raise CognitionSimError(
                 f"Unexpected error in {func.__name__}",
                 details={'original_error': str(e)}
             )
@@ -105,8 +105,8 @@ def handle_api_errors(func: Callable) -> Callable:
                 'error': 'Configuration Error',
                 'message': e.message
             }), 500
-        except QuadraMatrixError as e:
-            logger.error(f"Quadra Matrix error: {e.message}")
+        except CognitionSimError as e:
+            logger.error(f"CognitionSim error: {e.message}")
             return jsonify({
                 'error': e.__class__.__name__,
                 'message': e.message,
@@ -285,7 +285,7 @@ def create_error_response(
         'message': str(error)
     }
     
-    if include_details and isinstance(error, QuadraMatrixError):
+    if include_details and isinstance(error, CognitionSimError):
         response['details'] = error.details
     
     return jsonify(response), status_code

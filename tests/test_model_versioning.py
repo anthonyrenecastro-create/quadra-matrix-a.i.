@@ -216,5 +216,5 @@ def test_compare_versions(version_manager, sample_model):
     
     assert comparison['version1'] == "1.0.0"
     assert comparison['version2'] == "1.0.1"
-    assert comparison['metrics_comparison']['loss']['improvement'] == -0.5
-    assert comparison['metrics_comparison']['accuracy']['improvement'] == 0.2
+    assert comparison['metrics_comparison']['loss']['improvement'] == pytest.approx(-0.5)
+    assert comparison['metrics_comparison']['accuracy']['improvement'] == pytest.approx(0.2)

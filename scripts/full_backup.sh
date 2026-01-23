@@ -1,5 +1,5 @@
 #!/bin/bash
-# Full backup script for Quadra Matrix A.I.
+# Full backup script for CognitionSim
 # Creates a complete backup of all system components
 
 set -e

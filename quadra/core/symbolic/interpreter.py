@@ -29,6 +29,7 @@ from nltk.corpus import wordnet
 
 from quadra.state.memory_store import MemoryStore, StatefulInferenceContext
 from quadra.core.governance.policy_adapter import PolicyEngine, GovernanceService, PolicyContext
+from quadra.core.field import FieldEngine
 
 logger = logging.getLogger(__name__)
 
@@ -133,60 +134,217 @@ class SpikeGenerator:
 
 
 class NeuroplasticAdapter:
-    """Stage 4: Adapt neural state based on inference success."""
+    """
+    Stage 4: Neuroplastic weight adaptation with IFT field modulation.
     
-    def __init__(self, memory: MemoryStore):
+    # Technical implementation
+    The synapses sculpt themselves in response to success and failure,
+    guided by the field substrate's memory wisdom. When predictions align,
+    connections strengthen at rates determined by φ₆'s plasticity signal.
+    The adaptation itself becomes plastic—meta-learning through cosmic
+    field coupling.
+    
+    # Implementation
+    Implements exponential learning rate adaptation:
+        lr(n) = base_lr * (growth_factor)^n * field_factor
+    where n = success_streak, growth_factor = 1.1, base_lr = 0.01
+    field_factor = 1/(1 + exp(-<φ₆>)) ∈ [0.5, 1.5] (plasticity field)
+    
+    Properties:
+    - Success: streak increments, lr multiplies by 1.1
+    - Failure: streak resets to 0, lr returns to base
+    - Maximum: capped at 10x speedup (lr_max = 0.1)
+    - Doubling time: ~7 consecutive successes (1.1^7 ≈ 1.95)
+    - Field modulation: φ₆ scales effective plasticity
+    
+    Memory mutation: Updates success_streak and learning_rate_trajectory
+    """
+    
+    def __init__(self, memory: MemoryStore, oscillator: Optional['OscillatorModule'] = None):
         self.memory = memory
         self.base_learning_rate = 0.01
+        self.oscillator = oscillator  # Reference to get field state
     
     def adapt(self, success: bool) -> np.ndarray:
         """
-        Compute adaptive learning rate and update memory.
+        Compute adaptive learning rate with field modulation and update memory.
         
-        Uses exponential adaptation: success increases rate, failure resets.
+        # Technical implementation
+        # Implementation
         """
+        # # Technical implementation
+        # # Implementation
         metrics = self.memory.get_neuroplastic_metrics()
         current_streak = metrics['success_streak']
         
-        # Exponential growth with safety cap
+        # # Technical implementation
+        # # Implementation
+        field_factor = 1.0
+        if (self.oscillator is not None and 
+            hasattr(self.oscillator, 'enable_ift') and
+            self.oscillator.enable_ift and 
+            self.oscillator.field_engine is not None):
+            phi_6_mean = float(np.mean(self.oscillator.field_engine.phi[6]))
+            # Map φ₆ ∈ [-∞, ∞] to [0.5, 1.5] via sigmoid
+            field_factor = 0.5 + 1.0 / (1.0 + np.exp(-phi_6_mean))
+        
+        # # Technical implementation
+        # # Implementation
         if success:
             learning_rate = min(
-                self.base_learning_rate * (1.1 ** current_streak),
+                self.base_learning_rate * (1.1 ** current_streak) * field_factor,
                 self.base_learning_rate * 10.0  # 10x max speedup
             )
         else:
-            learning_rate = self.base_learning_rate
+            # # Technical implementation
+            # # Implementation
+            learning_rate = self.base_learning_rate * field_factor
         
+        # # Technical implementation
+        # # Implementation
         self.memory.record_inference(success, learning_rate)
         
-        # Return as adaptation signal (for field update)
-        return np.array([learning_rate] * 3)  # Three fields
+        # # Technical implementation
+        # # Implementation
+        return np.array([learning_rate, field_factor, float(success)])
 
 
 class OscillatorModule:
-    """Stage 5: Apply temporal oscillatory modulation."""
+    """
+    Stage 5: Apply temporal oscillatory modulation with IFT field substrate.
     
-    def __init__(self, memory: MemoryStore):
+    # Technical implementation
+    The phase rotates like a cosmic clock, breathing life into static patterns.
+    Beneath the rhythm, ten fields dance in twelve-fold harmony—a substrate
+    of cosmic forces that modulates the very fabric of cognition. The oscillator
+    pulses with adaptive thresholds and leak rates, self-regulating through
+    Atlantean wisdom embedded in the field topology.
+    
+    # Implementation
+    Applies multiplicative modulation: output = signal * (1 + α*sin(φ))
+    where φ advances linearly at Δφ = 0.1 rad/inference, creating periodic
+    amplitude variation with period T ≈ 63 steps. Phase persists across
+    requests (stateful continuity).
+    
+    Enhanced with IFT substrate:
+    - 10 coupled fields evolve via PDEs with 12-fold symmetry
+    - Adaptive threshold: θ(x) = base - 0.5·φ₀(x)
+    - Adaptive leak: λ(x) = base/(1 + exp(φ₄(x)))
+    - Field metrics tracked: energy, symmetry order, coupling
+    
+    Mathematical properties:
+    - Phase domain: φ ∈ [0, 2π) (periodic, wraps)
+    - Modulation amplitude: α = 0.3 (30% variation)
+    - Output range: signal * [0.7, 1.3]
+    - Period: 2π/0.1 ≈ 62.83 inferences
+    - Field evolution: ∂φₙ/∂t = Fₙ(φₙ, ∇²φₙ, ∇⁴φₙ) + ε·coupling
+    """
+    
+    def __init__(self, memory: MemoryStore, enable_ift: bool = True, 
+                 field_shape: tuple = (32, 32)):
         self.memory = memory
+        self.enable_ift = enable_ift and memory.enable_ift
+        
+        # Initialize IFT field substrate if enabled
+        if self.enable_ift:
+            # If we have saved state, use its shape; otherwise use default
+            actual_shape = field_shape
+            if memory.ift_field_state is not None:
+                # Extract shape from saved state: (10, H, W)
+                saved_shape = memory.ift_field_state.shape[1:]
+                if len(saved_shape) == 2:
+                    actual_shape = saved_shape
+                    logger.info(f"Using field shape from saved state: {actual_shape}")
+            
+            self.field_engine = FieldEngine(
+                shape=actual_shape,
+                mode="2d",
+                eps=0.15
+            )
+            # Restore previous state if available
+            if memory.ift_field_state is not None:
+                try:
+                    self.field_engine.phi = memory.ift_field_state
+                    logger.info(f"Restored IFT field state: {memory.ift_field_state.shape}")
+                except Exception as e:
+                    logger.warning(f"Failed to restore IFT state: {e}")
+        else:
+            self.field_engine = None
     
     def modulate(self, input_signal: torch.Tensor) -> torch.Tensor:
         """
-        Modulate signal by current oscillatory phase from memory.
+        Modulate signal by current oscillatory phase and IFT field substrate.
         
-        Phase is continuous across requests (stateful).
+        # Technical implementation
+        # Implementation
         """
+        # # Technical implementation
+        # # Implementation
         phase = self.memory.oscillator_phase
         
-        # Sinusoidal modulation with phase from previous state
+        # # Technical implementation
+        # # Implementation
         modulation = torch.sin(torch.tensor(phase)).item()
         
-        # Update phase for next request
+        # # Technical implementation
+        # # Implementation
         self.memory.oscillator_phase = (phase + 0.1) % (2 * np.pi)
         
-        # Apply modulation
-        modulated = input_signal * (1.0 + 0.3 * modulation)
+        # # Technical implementation
+        # # Implementation
+        if self.enable_ift and self.field_engine is not None:
+            # Evolve fields
+            self.field_engine.step(dt=0.01)
+            
+            # Extract metrics (convert arrays to scalars)
+            potential = float(np.mean(self.field_engine.Phi))  # Global average
+            symmetry = float(self.field_engine.get_symmetry_order())
+            energy = float(self.field_engine.get_field_energy())
+            
+            # Update memory state
+            self.memory.update_ift_state(
+                field_state=np.array([f.copy() for f in self.field_engine.phi]),
+                potential=potential,
+                symmetry=symmetry,
+                energy=energy
+            )
+            
+            # # Technical implementation
+            # # Implementation
+            # Map Φ ∈ [-∞, ∞] to [0.2, 0.4] via tanh
+            field_modulation = 0.3 + 0.1 * np.tanh(potential)
+        else:
+            field_modulation = 0.3  # Default amplitude
+        
+        # # Technical implementation
+        # # Implementation
+        modulated = input_signal * (1.0 + field_modulation * modulation)
         
         return modulated
+    
+    def get_adaptive_threshold(self, base_threshold: float = 1.0) -> float:
+        """
+        Get field-modulated firing threshold.
+        
+        # Technical implementation
+        # Implementation
+        """
+        if self.enable_ift and self.field_engine is not None:
+            phi_0_mean = float(np.mean(self.field_engine.phi[0]))
+            return base_threshold - 0.5 * phi_0_mean
+        return base_threshold
+    
+    def get_adaptive_leak(self, base_leak: float = 0.1) -> float:
+        """
+        Get field-modulated leak rate.
+        
+        # Technical implementation
+        # Implementation
+        """
+        if self.enable_ift and self.field_engine is not None:
+            phi_4_mean = float(np.mean(self.field_engine.phi[4]))
+            return base_leak / (1.0 + np.exp(phi_4_mean))
+        return base_leak
 
 
 class SymbolicReasoner:
@@ -262,31 +420,34 @@ class SymbolicReasoner:
 
 class StatefulSymbolicPredictiveInterpreter:
     """
-    Complete 8-stage stateful inference system.
+    Complete 8-stage stateful inference system with IFT field substrate.
     
-    Implements the full pipeline with persistent memory and governance.
+    Implements the full pipeline with persistent memory, governance, and
+    ten-field substrate for adaptive parameter modulation.
     """
     
-    def __init__(self, model_version: str = "spi-symbolic-0.2.0"):
+    def __init__(self, model_version: str = "spi-symbolic-0.2.0", 
+                 enable_ift: bool = True, field_shape: tuple = (32, 32)):
         self.model_version = model_version
         self.device = torch.device('cpu')
+        self.enable_ift = enable_ift
         
         # Initialize memory (stateful across requests)
-        self.memory = MemoryStore()
+        self.memory = MemoryStore(enable_ift=enable_ift)
         
         # Initialize pipeline stages
         self.encoder = InputEncoder(input_dim=128)
         self.pattern_extractor = PatternExtractor(n_patterns=3)
         self.spike_generator = SpikeGenerator(input_dim=128, hidden_dim=64)
-        self.neuroplastic_adapter = NeuroplasticAdapter(self.memory)
-        self.oscillator = OscillatorModule(self.memory)
+        self.oscillator = OscillatorModule(self.memory, enable_ift=enable_ift, field_shape=field_shape)
+        self.neuroplastic_adapter = NeuroplasticAdapter(self.memory, oscillator=self.oscillator)
         self.symbolic_reasoner = SymbolicReasoner(self.memory)
         
         # Governance
         self.policy_engine = PolicyEngine()
         self.governance_service = GovernanceService(self.policy_engine)
         
-        logger.info(f"StatefulSymbolicPredictiveInterpreter initialized (v{self.model_version})")
+        logger.info(f"StatefulSymbolicPredictiveInterpreter initialized (v{self.model_version}, IFT={enable_ift})")
     
     async def process(self, input_data: Dict[str, Any], request_id: str = "") -> Dict[str, Any]:
         """
@@ -400,6 +561,11 @@ class StatefulSymbolicPredictiveInterpreter:
             'oscillatory_phase': float(self.memory.oscillator_phase),
             'syntropy_state': self.memory.syntropy_values.copy(),
             'neuroplastic_metrics': metrics,
+            'ift_field_metrics': self.memory.get_ift_metrics() if self.enable_ift else {'enabled': False},
+            'adaptive_parameters': {
+                'threshold': self.oscillator.get_adaptive_threshold() if self.enable_ift else 1.0,
+                'leak': self.oscillator.get_adaptive_leak() if self.enable_ift else 0.1,
+            },
             'stage_times': ctx.stage_times,
             'memory_state': {
                 'total_concepts': len(self.memory.concept_history),

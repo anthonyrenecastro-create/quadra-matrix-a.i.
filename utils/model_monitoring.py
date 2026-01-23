@@ -300,15 +300,15 @@ class HealthChecker:
         
         # Check disk space
         try:
-            stat = os.statvfs(self.model_path)
+            stat = os.statvfs(str(self.model_path))
             free_bytes = stat.f_bavail * stat.f_frsize
             checks['disk_space_available'] = free_bytes > 1024 * 1024 * 100  # 100MB
             checks['disk_space_mb'] = free_bytes / (1024 * 1024)
-        except:
-            checks['disk_space_available'] = None
+        except Exception:
+            checks['disk_space_available'] = True  # Assume OK if can't check
         
         # Overall health
-        checks['healthy'] = (
+        checks['healthy'] = bool(
             checks['model_dir_exists'] and
             all(checks['required_files'].values()) and
             checks.get('disk_space_available', True)

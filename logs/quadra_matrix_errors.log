@@ -1,0 +1,316 @@
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 04:31:46 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 04:41:38 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 04:41:41 - quadra.core.symbolic.interpreter - [31mERROR[0m - process:530 - Pipeline execution failed: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 487, in process
+    ctx.oscillated_output = self.oscillator.modulate(ctx.spikes)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/symbolic/interpreter.py", line 288, in modulate
+    self.field_engine.step(dt=0.01)
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 223, in step
+    coupling = self.eps * self._tensor_coupling(n)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./quadra/core/field/ift_engine.py", line 173, in _tensor_coupling
+    mix += self.phi[m]
+ValueError: operands could not be broadcast together with shapes (32,32) (16,16) (32,32) 
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 05:02:30 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 05:09:41 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error
+2026-01-23 05:14:43 - utils.error_handling - [31mERROR[0m - wrapper:61 - Validation error in failing_function: Invalid input
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - wrapper:69 - Unexpected error in failing_function: Unexpected
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 59, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 66, in failing_function
+    raise ValueError("Unexpected")
+ValueError: Unexpected
+
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - safe_execute:148 - Operation failed: Error
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 106, in test_error_context_with_error_raise
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - __exit__:182 - Error in test operation: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 111, in test_error_context_with_error_suppress
+    raise ValueError("Test error")
+ValueError: Test error
+
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - wrapper:235 - All 3 attempts failed for func
+2026-01-23 05:14:44 - utils.error_handling - [31mERROR[0m - wrapper:261 - Exception in func: Test error
+Traceback (most recent call last):
+  File "/workspaces/quadra-matrix-a.i./utils/error_handling.py", line 259, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/quadra-matrix-a.i./tests/test_error_handling.py", line 173, in func
+    raise ValueError("Test error")
+ValueError: Test error

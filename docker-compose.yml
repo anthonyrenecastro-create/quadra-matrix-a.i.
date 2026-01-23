@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  quadra-matrix:
+  cognitionsim:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: quadra-matrix-ai
+    container_name: cognitionsim-ai
     ports:
       - "${HOST_PORT:-5000}:5000"
     environment:

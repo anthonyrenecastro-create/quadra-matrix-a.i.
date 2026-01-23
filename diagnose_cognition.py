@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quadra Matrix - Cognitive Diagnostic Tool
+CognitionSim - Cognitive Diagnostic Tool
 Advanced analysis and visualization of cognitive processes.
 
 Usage:
@@ -337,7 +337,7 @@ class CognitionDiagnostics:
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Diagnose Quadra Matrix cognitive system health'
+        description='Diagnose CognitionSim cognitive system health'
     )
     parser.add_argument('--field-size', type=int, default=100, help='Neural field size')
     parser.add_argument('--device', choices=['cpu', 'cuda'], default='cpu', help='Compute device')

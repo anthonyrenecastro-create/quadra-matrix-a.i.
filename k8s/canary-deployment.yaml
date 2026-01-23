@@ -3,12 +3,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: quadra-matrix-service
+  name: cognitionsim-service
   labels:
-    app: quadra-matrix
+    app: cognitionsim
 spec:
   selector:
-    app: quadra-matrix
+    app: cognitionsim
   ports:
     - protocol: TCP
       port: 80
@@ -20,25 +20,25 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quadra-matrix-stable
+  name: cognitionsim-stable
   labels:
-    app: quadra-matrix
+    app: cognitionsim
     version: stable
 spec:
   replicas: 9  # 90% of traffic
   selector:
     matchLabels:
-      app: quadra-matrix
+      app: cognitionsim
       version: stable
   template:
     metadata:
       labels:
-        app: quadra-matrix
+        app: cognitionsim
         version: stable
     spec:
       containers:
-      - name: quadra-matrix
-        image: quadra-matrix:1.0.0
+      - name: cognitionsim
+        image: cognitionsim:1.0.0
         ports:
         - containerPort: 5000
         env:
@@ -71,20 +71,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quadra-matrix-canary
+  name: cognitionsim-canary
   labels:
-    app: quadra-matrix
+    app: cognitionsim
     version: canary
 spec:
   replicas: 1  # 10% of traffic
   selector:
     matchLabels:
-      app: quadra-matrix
+      app: cognitionsim
       version: canary
   template:
     metadata:
       labels:
-        app: quadra-matrix
+        app: cognitionsim
         version: canary
       annotations:
         prometheus.io/scrape: "true"
@@ -92,8 +92,8 @@ spec:
         prometheus.io/path: "/metrics"
     spec:
       containers:
-      - name: quadra-matrix
-        image: quadra-matrix:1.1.0-canary  # New version
+      - name: cognitionsim
+        image: cognitionsim:1.1.0-canary  # New version
         ports:
         - containerPort: 5000
         env:
@@ -128,12 +128,12 @@ spec:
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: quadra-matrix-stable-hpa
+  name: cognitionsim-stable-hpa
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: quadra-matrix-stable
+    name: cognitionsim-stable
   minReplicas: 3
   maxReplicas: 20
   metrics:
@@ -155,13 +155,13 @@ spec:
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: quadra-matrix-monitor
+  name: cognitionsim-monitor
   labels:
-    app: quadra-matrix
+    app: cognitionsim
 spec:
   selector:
     matchLabels:
-      app: quadra-matrix
+      app: cognitionsim
   endpoints:
   - port: web
     path: /metrics

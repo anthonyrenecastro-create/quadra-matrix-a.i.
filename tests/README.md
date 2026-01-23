@@ -1,4 +1,4 @@
-# Test directory for Quadra Matrix A.I.
+# Test directory for CognitionSim
 
 This directory contains unit tests and integration tests for the project.
 
@@ -36,7 +36,7 @@ make format
 ### In Docker
 
 ```bash
-docker-compose run quadra-matrix pytest tests/
+docker-compose run cognitionsim pytest tests/
 ```
 
 ## Test Structure

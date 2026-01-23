@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quadra-matrix-ai
+  name: cognitionsim-ai
   labels:
-    app: quadra-matrix-ai
+    app: cognitionsim-ai
     version: v1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: quadra-matrix-ai
+      app: cognitionsim-ai
   template:
     metadata:
       labels:
-        app: quadra-matrix-ai
+        app: cognitionsim-ai
         version: v1
     spec:
       containers:
-      - name: quadra-matrix
-        image: quadra-matrix-ai:latest
+      - name: cognitionsim
+        image: cognitionsim-ai:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
@@ -82,9 +82,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quadra-matrix-ai-service
+  name: cognitionsim-ai-service
   labels:
-    app: quadra-matrix-ai
+    app: cognitionsim-ai
 spec:
   type: LoadBalancer
   ports:
@@ -93,7 +93,7 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: quadra-matrix-ai
+    app: cognitionsim-ai
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

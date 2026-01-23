@@ -2,7 +2,7 @@
 
 # Default target
 help:
-	@echo "Quadra Matrix A.I. - Available Commands"
+	@echo "CognitionSim - Available Commands"
 	@echo "========================================"
 	@echo "install         - Install production dependencies"
 	@echo "dev-install     - Install development dependencies"
@@ -47,7 +47,7 @@ clean:
 
 # Docker
 docker-build:
-	docker build -t quadra-matrix-ai:latest .
+	docker build -t cognitionsim-ai:latest .
 
 docker-run:
 	docker-compose up -d

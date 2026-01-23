@@ -29,7 +29,7 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
         log_record['line'] = record.lineno
         
         # Add application context
-        log_record['application'] = 'quadra-matrix-ai'
+        log_record['application'] = 'cognitionsim-ai'
         log_record['environment'] = os.getenv('FLASK_ENV', 'development')
         
         # Add process info
@@ -102,21 +102,21 @@ def setup_structured_logging(
 # ============================================================
 
 LOGSTASH_CONFIG = """
-# Logstash Configuration for Quadra Matrix A.I.
-# Place in: /etc/logstash/conf.d/quadra-matrix.conf
+# Logstash Configuration for CognitionSim
+# Place in: /etc/logstash/conf.d/cognitionsim.conf
 
 input {
   file {
     path => "/app/logs/quadra_matrix.json.log"
     codec => "json"
-    type => "quadra-matrix-app"
+    type => "cognitionsim-app"
     start_position => "beginning"
   }
   
   file {
     path => "/app/logs/quadra_matrix_error.json.log"
     codec => "json"
-    type => "quadra-matrix-error"
+    type => "cognitionsim-error"
     start_position => "beginning"
   }
 }
@@ -130,8 +130,8 @@ filter {
   
   # Add tags
   mutate {
-    add_field => { "application" => "quadra-matrix-ai" }
-    add_tag => [ "python", "ml", "quadra-matrix" ]
+    add_field => { "application" => "cognitionsim-ai" }
+    add_tag => [ "python", "ml", "cognitionsim" ]
   }
   
   # Extract error details if present
@@ -145,7 +145,7 @@ filter {
 output {
   elasticsearch {
     hosts => ["elasticsearch:9200"]
-    index => "quadra-matrix-%{+YYYY.MM.dd}"
+    index => "cognitionsim-%{+YYYY.MM.dd}"
     document_type => "_doc"
   }
   
@@ -169,13 +169,13 @@ clients:
   - url: http://loki:3100/loki/api/v1/push
 
 scrape_configs:
-  - job_name: quadra-matrix
+  - job_name: cognitionsim
     static_configs:
       - targets:
           - localhost
         labels:
-          job: quadra-matrix
-          application: quadra-matrix-ai
+          job: cognitionsim
+          application: cognitionsim-ai
           __path__: /app/logs/quadra_matrix.json.log
     
     pipeline_stages:
@@ -232,7 +232,7 @@ FLUENTD_CONFIG = """
 <filter quadra.matrix.**>
   @type record_transformer
   <record>
-    application quadra-matrix-ai
+    application cognitionsim-ai
     environment "#{ENV['FLASK_ENV'] || 'production'}"
   </record>
 </filter>
@@ -242,7 +242,7 @@ FLUENTD_CONFIG = """
   host elasticsearch
   port 9200
   logstash_format true
-  logstash_prefix quadra-matrix
+  logstash_prefix cognitionsim
   include_tag_key true
   tag_key @log_name
   flush_interval 10s

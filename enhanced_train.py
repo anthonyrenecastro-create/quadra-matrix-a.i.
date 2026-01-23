@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quadra Matrix A.I. - Enhanced Training Configuration
+CognitionSim - Enhanced Training Configuration
 Trains longer, uses multiple datasets, and scales up field size for better results
 """
 
@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 async def enhanced_training():
     """Run enhanced training with scaled parameters"""
-    from train_quadra_matrix import QuadraMatrixTrainer
+    from train_quadra_matrix import CognitionSimTrainer
     
     print("\n" + "="*80)
     print("🚀 QUADRA MATRIX - ENHANCED TRAINING SESSION")
@@ -32,7 +32,7 @@ async def enhanced_training():
     print("-"*80)
     print("Field size: 200 | Batches: 200 | Batch size: 15\n")
     
-    trainer = QuadraMatrixTrainer(field_size=200, device='cpu')
+    trainer = CognitionSimTrainer(field_size=200, device='cpu')
     
     metrics = await trainer.train(
         dataset_name='wikitext',
@@ -55,7 +55,7 @@ async def enhanced_training():
 
 async def multi_dataset_training():
     """Train on multiple datasets for robustness"""
-    from train_quadra_matrix import QuadraMatrixTrainer
+    from train_quadra_matrix import CognitionSimTrainer
     
     print("\n" + "="*80)
     print("🌐 MULTI-DATASET TRAINING")
@@ -72,7 +72,7 @@ async def multi_dataset_training():
         print(f"\n📖 Dataset {idx}/{len(datasets)}: {display_name}")
         print("-"*80)
         
-        trainer = QuadraMatrixTrainer(field_size=150, device='cpu')
+        trainer = CognitionSimTrainer(field_size=150, device='cpu')
         
         try:
             if config:
@@ -118,7 +118,7 @@ async def multi_dataset_training():
 
 async def scaled_field_comparison():
     """Compare different field sizes to show scaling benefits"""
-    from train_quadra_matrix import QuadraMatrixTrainer
+    from train_quadra_matrix import CognitionSimTrainer
     
     print("\n" + "="*80)
     print("🔬 FIELD SIZE SCALING EXPERIMENT")
@@ -132,7 +132,7 @@ async def scaled_field_comparison():
         print(f"\n📏 Testing Field Size: {field_size}")
         print("-"*80)
         
-        trainer = QuadraMatrixTrainer(field_size=field_size, device='cpu')
+        trainer = CognitionSimTrainer(field_size=field_size, device='cpu')
         
         metrics = await trainer.train(
             dataset_name='wikitext',

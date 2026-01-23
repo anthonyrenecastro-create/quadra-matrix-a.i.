@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quadra Matrix A.I. - GPU Optimized Version
+CognitionSim - GPU Optimized Version
 High-performance neural field processing with CUDA acceleration and multi-core support.
 
 Features:

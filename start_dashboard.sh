@@ -1,7 +1,7 @@
 #!/bin/bash
-# Quadra Matrix Neural Command Center - Quick Start
+# CognitionSim Neural Command Center - Quick Start
 
-echo "⚡ Quadra Matrix Neural Command Center Setup"
+echo "⚡ CognitionSim Neural Command Center Setup"
 echo "=============================================="
 echo ""
 

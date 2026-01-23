@@ -1,5 +1,5 @@
 #!/bin/bash
-# Backup script for Quadra Matrix A.I. models
+# Backup script for CognitionSim models
 
 set -e
 

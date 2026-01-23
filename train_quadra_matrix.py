@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quadra Matrix Training Script - Optimized for Exponential Speed Growth
+CognitionSim Training Script - Optimized for Exponential Speed Growth
 Leverages oscillatory dynamics, adaptive K-clustering, neuroplasticity acceleration,
 symbolic prediction, and SNN temporal processing for ultra-fast convergence.
 
@@ -183,7 +183,7 @@ class SymbolicSpeedOptimizer:
         return self.cache_hits / self.total_queries
 
 
-class QuadraMatrixTrainer:
+class CognitionSimTrainer:
     """Main training orchestrator with exponential optimization"""
     def __init__(self, field_size: int = 100, device: str = 'cpu', 
                  enable_noise: bool = True, noise_intensity: float = 0.15):
@@ -346,7 +346,7 @@ class QuadraMatrixTrainer:
     async def train(self, dataset_name: str = "HuggingFaceFW/fineweb-edu", dataset_config: str = "CC-MAIN-2013-20", 
                    num_batches: int = 100, batch_size: int = 10, use_streaming: bool = True):
         """Main training loop with exponential optimization"""
-        logger.info(f"🚀 Starting Quadra Matrix Training on {dataset_name}" + (f"/{dataset_config}" if dataset_config else ""))
+        logger.info(f"🚀 Starting CognitionSim Training on {dataset_name}" + (f"/{dataset_config}" if dataset_config else ""))
         logger.info(f"📈 Exponential optimization enabled: Oscillatory K-clustering + Neuroplasticity + Symbolic caching + SNN")
         
         # Load dataset
@@ -514,7 +514,7 @@ class QuadraMatrixTrainer:
     def plot_metrics(self):
         """Generate visualization of training metrics"""
         fig, axes = plt.subplots(3, 2, figsize=(15, 12))
-        fig.suptitle('Quadra Matrix Training - Exponential Optimization Metrics', fontsize=16)
+        fig.suptitle('CognitionSim Training - Exponential Optimization Metrics', fontsize=16)
         
         # Training time
         axes[0, 0].plot(self.metrics['training_time'], label='Batch Time', color='blue', alpha=0.6)
@@ -575,7 +575,7 @@ async def main():
     import argparse
     
     # Parse command line arguments
-    parser = argparse.ArgumentParser(description='Quadra Matrix A.I. Training with Noise Injection')
+    parser = argparse.ArgumentParser(description='CognitionSim Training with Noise Injection')
     parser.add_argument('--dataset', type=str, default='HuggingFaceFW/fineweb-edu',
                        help='HuggingFace dataset name (default: HuggingFaceFW/fineweb-edu)')
     parser.add_argument('--dataset-config', type=str, default='CC-MAIN-2013-20',
@@ -594,7 +594,7 @@ async def main():
                        help='Field size (default: 100)')
     args = parser.parse_args()
     
-    logger.info("🌟 Quadra Matrix A.I. - Exponential Training System with NOISE INJECTION")
+    logger.info("🌟 CognitionSim - Exponential Training System with NOISE INJECTION")
     logger.info("=" * 80)
     logger.info(f"� Dataset: {args.dataset}" + (f" ({args.dataset_config})" if args.dataset_config else ""))
     logger.info(f"🔊 Noise injection: {'ENABLED' if args.enable_noise else 'DISABLED'}")
@@ -607,7 +607,7 @@ async def main():
     logger.info(f"🖥️  Device: {device}")
     
     # Initialize trainer with noise injection
-    trainer = QuadraMatrixTrainer(
+    trainer = CognitionSimTrainer(
         field_size=args.field_size, 
         device=device,
         enable_noise=args.enable_noise,
